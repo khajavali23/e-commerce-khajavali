@@ -25,10 +25,35 @@ header.navbar {
   transition: background 0.3s ease, box-shadow 0.3s ease;
 }
 
-header.navbar.scrolled {
+/* Navbar background becomes white on hover */
+header.navbar:hover {
   background: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
+
+/* Links + Icons → default color is white (to show on transparent bg) */
+header.navbar .nav-links a,
+header.navbar .nav-icons a {
+  color: #fff; 
+  transition: color 0.4s ease; /* smooth color transition */
+}
+
+/* On hover, Links + Icons → change to black */
+header.navbar:hover .nav-links a,
+header.navbar:hover .nav-icons a {
+  color: #000 !important;
+}
+
+/* Add smooth transition for logo image */
+header.navbar .logo img {
+  transition: filter 0.4s ease;
+}
+
+/* On hover, Logo → changes to black tone */
+header.navbar:hover .logo img {
+  filter: brightness(0) invert(0);
+}
+
 
 .container {
   max-width: 1200px;
@@ -361,4 +386,85 @@ header.navbar:hover .logo img {
   .mega-bg {
     display: none; /* hide bg img on mobile */
   }
+}
+/* =========================
+   Submenu Headline Scroll
+========================= */
+#submenu-polyester {
+  display: flex;
+  gap: 40px;                 /* items మధ్యలో gap */
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  white-space: nowrap;       /* ఒకే line లో ఉంచడం */
+  overflow: hidden;          /* బయటికి వెళ్లిన text కనిపించకుండా */
+  background: #f9f9f9;       /* optional bg */
+  border-top: 1px solid #ddd;
+  animation: scroll-left 20s linear infinite; /* scroll effect */
+}
+
+#submenu-polyester li {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#submenu-polyester li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+#submenu-polyester li a:hover {
+  color: #c92f2f;
+}
+
+/* animation keyframes */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* =========================
+   HEADLINE MARQUEE STYLE
+========================= */
+.headline-container {
+    width: 100%;
+    overflow: hidden;
+    background: #f5f5f5;
+    border-top: 0px solid #ddd;
+    border-bottom: 0px solid #ddd;
+    padding: 10px
+}
+
+.headline-marquee {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* space between items */
+  animation: scroll-left 35s linear infinite;
+}
+
+.headline-marquee p {
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Divider Style */
+.divider {
+  width: 1px;
+  height: 16px;
+  background: #aaa;
+  display: inline-block;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
 }
