@@ -1,0 +1,19 @@
+/* 🔧 Hotfix: Bootstrap container ను మళ్లీ default లా చేయి */
+.container {
+  /* mobile first */
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  box-sizing: border-box;
+}
+
+/* Bootstrap లాగా breakpoints వద్ద max-width (అవసరమైతే) */
+@media (min-width: 576px)  { .container { max-width: 540px  !important; } }
+@media (min-width: 768px)  { .container { max-width: 720px  !important; } }
+@media (min-width: 992px)  { .container { max-width: 960px  !important; } }
+@media (min-width: 1200px) { .container { max-width: 1140px !important; } }
+@media (min-width: 1400px) { .container { max-width: 1320px !important; } }
+
+/* images overflow కాకుండా */
+img { max-width: 100%; height: auto; display: block; }
