@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- =========================
+         META INFORMATION
+    ========================= -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- =========================
+         PAGE TITLE
+    ========================= -->
+        <title>Home | MyShop</title>
+
+        <!-- =========================
+         CSS FILES (ORDER IMPORTANT!)
+    ========================= -->
+        <!-- Reset & Common Styles -->
+        <link rel="stylesheet" href="../css/utils.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+        <!-- Layout Specific -->
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/footer.css" />
+         
+
+        <!-- Page Specific -->
+        <link rel="stylesheet" href="../css/product.css" />
+        <link rel="stylesheet" href="../css/cart.css" />
+        <link rel="stylesheet" href="../css/auth.css" />
+
+        <!-- Main Style & Responsive -->
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/responsive.css" />
+        <link rel="stylesheet" href="../css/theme.css" />
+        
+
+        <!-- Font Awesome for Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    </head>
+    <body>
+        <!-- =========================
+         HEADER + NAVBAR
+    ========================= -->
+        <header class="navbar">
+            <div class="container">
+                <!-- LOGO -->
+                <div class="logo">
+                    <img src="/frontend/images/home_img/white_logo.avif" alt="Logo" />
+                </div>
+
+                <!-- NAVIGATION -->
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">New Arrival</a></li>
+                        <li><a href="#">Best Seller</a></li>
+
+                        <!-- Mega Menu -->
+                        <li class="dropdown">
+                            <a href="#">Printed Fabric <i class="fas fa-caret-down"></i></a>
+                            <div class="mega-menu">
+                                <!-- Column 1 -->
+                                <div class="mega-column">
+                                    <h4>Polyester Fabric</h4>
+                                    <a href="#">Japan Satin</a>
+                                    <a href="#">Tusser Silk</a>
+                                    <a href="#">Kora Silk</a>
+                                </div>
+
+                                <!-- Column 2 -->
+                                <div class="mega-column">
+                                    <h4>Pure & Viscose Fabric</h4>
+                                    <a href="#">Pure Cotton</a>
+                                    <a href="#">Pure Chiffon</a>
+                                    <a href="#">Pure Georgette</a>
+                                </div>
+
+                                <!-- Column 3 -->
+                                <div class="mega-column">
+                                    <h4>Fabric Quality</h4>
+                                    <a href="#">Pure Fabric</a>
+                                    <a href="#">Viscose Fabric</a>
+                                    <a href="#">Polyester Fabric</a>
+                                </div>
+
+                                <!-- Background Image Column -->
+                                <div class="mega-bg"></div>
+                            </div>
+                        </li>
+
+                        <li><a href="#">Fabric Set</a></li>
+                        <li><a href="#">Dyed Fabric</a></li>
+                        <li><a href="#">Women's Wear</a></li>
+                        <li><a href="#">Sale</a></li>
+                        <li><a href="#">Design Gallery</a></li>
+                    </ul>
+                </nav>
+
+                <!-- NAV ICONS -->
+                <div class="nav-icons">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="fas fa-user"></i></a>
+                    <a href="#"><i class="fas fa-shopping-cart "></i><span class="cart-count">0</span></a>
+                </div>
+
+                <!-- HAMBURGER MENU (for mobile) -->
+
+                <div class="hamburger" onclick="openMenu()"><i class="fas fa-bars"></i></div>
+
+                <!-- MOBILE MENU -->
+                <div class="mobile-menu" id="mobileMenu">
+                    <div class="menu-header">
+                        <span id="menuBack" onclick="goBack()">
+                            <span class="material-icons">arrow_back</span>
+                        </span>
+                        <span id="menuTitle">Menu</span>
+                        <span onclick="closeMenu()">✕</span>
+                    </div>
+
+                    <ul class="menu-level menu-root active">
+                        <li><a href="#">New Arrival</a></li>
+                        <li><a href="#">Best Seller</a></li>
+                        <li onclick="openSubmenu('printed')">Printed Fabric ›</li>
+                        <li><a href="#">Fabric Set</a></li>
+                        <li onclick="openSubmenu('dyed')">Dyed Fabric ›</li>
+                        <li onclick="openSubmenu('women')">Women's Wear ›</li>
+                        <li><a href="#">Sale</a></li>
+                        <li><a href="#">Design Gallery</a></li>
+                    </ul>
+
+                    <!-- SUBMENU 1 -->
+                    <ul class="menu-level" id="submenu-printed">
+                        <li class="submenu-title">Printed Fabric</li>
+                        <li onclick="openSubmenu('polyester')">Polyester Fabric ›</li>
+                        <li onclick="openSubmenu('pure')">Pure & Viscose ›</li>
+                        <li><a href="#">Fabric Quality</a></li>
+                    </ul>
+
+                    <!-- SUBMENU 2 -->
+                    <ul class="menu-level" id="submenu-polyester">
+                        <li class="submenu-title">Polyester Fabric</li>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Japan Satin</a></li>
+                        <li><a href="#">Tusser Silk</a></li>
+                        <li><a href="#">Kora Silk</a></li>
+                        <li><a href="#">Organza</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+
+
+        
+
+        <div class="hero-banner">
+            <div class="hero-content">
+                <h1>
+                    Fabric That <br />
+                    Shines You
+                </h1>
+                <a href="#" class="btn">Shop All</a>
+            </div>
+            
+        </div>
+       <div className="headline-container">
+  <div className="headline-marquee">
+    <p>Headline 1</p>
+    <p>Headline 2</p>
+    <p>Headline 3</p>
+    <p>Headline 4</p>
+  </div>
+</div>
+
+      
+        <!-- HAMBURGER -->
+
+        <script src="../js/utils.js"></script>
+    </body>
+</html>

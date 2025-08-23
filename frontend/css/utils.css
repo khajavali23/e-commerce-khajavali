@@ -1,0 +1,54 @@
+:root {
+  /* =====================
+     FONT SYSTEM
+  ===================== */
+  --font-body--family: Inter, sans-serif;
+  --font-heading--family: Jost, sans-serif;
+  --font-accent--family: "Bricolage Grotesque", sans-serif;
+
+  --font-size--paragraph: 1rem; /* 16px */
+  --font-size--h1: clamp(2.5rem, 6vw, 3.5rem); /* Responsive H1 */
+  --font-size--h2: clamp(2rem, 5vw, 3rem);
+  --font-size--h3: 1.75rem;
+  --font-size--h4: 1.5rem;
+
+  /* =====================
+     COLOR SYSTEM
+  ===================== */
+  --color-primary: #0066FF;        /* Main brand blue */
+  --color-secondary: #333333;      /* Dark grey */
+  --color-background: #FFFFFF;     /* White */
+  --color-foreground-heading: #111111;
+  --color-foreground-body: #444444;
+
+  --color-error: #E53935;          /* Red for errors */
+  --color-success: #43A047;        /* Green for success */
+  --color-warning: #FDD835;        /* Yellow warning */
+
+  /* =====================
+     SPACING SYSTEM
+  ===================== */
+  --padding-sm: 0.5rem;   /* 8px */
+  --padding-md: 1rem;     /* 16px */
+  --padding-lg: 2rem;     /* 32px */
+
+  --margin-sm: 0.5rem;
+  --margin-md: 1rem;
+  --margin-lg: 2rem;
+
+  --gap-sm: 0.5rem;
+  --gap-md: 1rem;
+  --gap-lg: 2rem;
+
+  /* =====================
+     BORDER + SHADOW
+  ===================== */
+  --style-border-radius-buttons-primary: 8px;
+  --style-border-radius-inputs: 6px;
+  --style-border-radius-cards: 12px;
+
+  --shadow-button: 0 4px 8px rgba(0,0,0,0.1);
+  --shadow-card: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+

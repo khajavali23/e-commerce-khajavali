@@ -1,0 +1,31 @@
+<!-- frontend/templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}MyShop{% endblock %}</title>
+  
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" href="../static/css/responsive.css">
+</head>
+<body>
+
+  <!-- Header Include -->
+  {% include '../components/header.html' %}
+
+  <!-- Page Content -->
+  <main>
+    {% block content %}
+    <!-- Child page content will come here -->
+    {% endblock %}
+  </main>
+
+  <!-- Footer Include -->
+  {% include '../components/footer.html' %}
+
+  <!-- JS Files -->
+  <script src="../static/js/main.js"></script>
+</body>
+</html>
