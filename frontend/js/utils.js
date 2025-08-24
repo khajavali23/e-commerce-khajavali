@@ -107,3 +107,66 @@ document.addEventListener('click', function(e){
 
 
 
+   window.addEventListener("scroll", function () {
+    const header = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+
+
+  const slider = document.querySelector('.products-grid');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+  slider.style.cursor = "grabbing"; // show grab effect
+});
+
+slider.addEventListener('mouseup', () => {
+  isDown = false;
+  slider.style.cursor = "grab";
+});
+
+slider.addEventListener('mouseleave', () => {
+  isDown = false; // stop if pointer leaves while pressed
+  slider.style.cursor = "grab";
+});
+
+slider.addEventListener('mousemove', (e) => {
+  if (!isDown) return; // only move when pressed
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 2; // adjust speed
+  slider.scrollLeft = scrollLeft - walk;
+});
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const reviewsGrid = document.querySelector(".reviews-grid");
+
+  // duplicate reviews for seamless loop
+  reviewsGrid.innerHTML += reviewsGrid.innerHTML;
+
+  // start animation
+  reviewsGrid.classList.add("scrolling");
+});
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".reviews-row").forEach(row => {
+    row.innerHTML += row.innerHTML; // duplicate reviews for seamless loop
+    row.classList.add("scrolling"); // start scroll
+  });
+});
+
+
+

@@ -20,7 +20,8 @@
         <link rel="stylesheet" href="../css/utils.css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-
+        <!-- Bootstrap + FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         <!-- Layout Specific -->
         <link rel="stylesheet" href="../css/header.css" />
         <link rel="stylesheet" href="../css/footer.css" />
@@ -56,7 +57,7 @@
                 <nav>
                     <ul class="nav-links">
                         <li><a href="index.html">New Arrival</a></li>
-                        <li><a href="#">Best Seller</a></li>
+                        <li><a href="category.html">Best Seller</a></li>
 
                         <!-- Mega Menu -->
                         <li class="dropdown">
@@ -101,51 +102,47 @@
 
                 <!-- NAV ICONS -->
                 <!-- Nav Icons -->
-              <div class="nav-icons">
-  <a href="#"><i class="fas fa-search"></i></a>
+                <div class="nav-icons">
+                    <a href="#"><i class="fas fa-search"></i></a>
 
-  <!-- User Dropdown -->
-  <div class="dropdown d-inline-block">
-    <a href="#" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="fas fa-user"></i>
-    </a>
+                    <!-- User Dropdown -->
+                    <div class="dropdown d-inline-block">
+                        <a href="#" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
 
-    <div class="dropdown-menu dropdown-menu-end p-3 shadow account-dropdown" aria-labelledby="userDropdown">
-      <h6 class="mb-3">Account</h6>
+                        <div class="dropdown-menu dropdown-menu-end p-3 shadow account-dropdown" aria-labelledby="userDropdown">
+                            <h6 class="mb-3">Account</h6>
 
-      <!-- Sign in Button -->
-      <a href="login.html" class="btn btn-dark w-100 mb-3">Sign in</a>
+                            <!-- Sign in Button -->
+                            <a href="login.html" class="btn btn-dark w-100 mb-3">Sign in</a>
 
-      <!-- Links -->
-      <div class="d-flex gap-2">
-        <a href="login.html" class="btn btn-light flex-fill"><i class="fas fa-box"></i> Orders</a>
-        <a href="login.html" class="btn btn-light flex-fill"><i class="fas fa-user-circle"></i> Profile</a>
-      </div>
-    </div>
-  </div>
+                            <!-- Links -->
+                            <div class="d-flex gap-2">
+                                <a href="login.html" class="btn btn-light flex-fill"><i class="fas fa-box"></i> Orders</a>
+                                <a href="login.html" class="btn btn-light flex-fill"><i class="fas fa-user-circle"></i> Profile</a>
+                            </div>
+                        </div>
+                    </div>
 
-  <!-- Wishlist -->
-  <a href="#">
-    <i class="fas fa-heart"></i>
-    <span class="wishlist-count">0</span>
-  </a>
+                    <!-- Wishlist -->
+                    <a href="#">
+                        <i class="fas fa-heart"></i>
+                        <span class="wishlist-count">0</span>
+                    </a>
 
-  <!-- Cart -->
-  <a href="#">
-    <i class="fas fa-shopping-cart"></i>
-    <span class="cart-count">0</span>
-  </a>
-</div>
+                    <!-- Cart -->
+                    <a href="#">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
 
                 <!-- CSS -->
 
-                <!-- Bootstrap + FontAwesome -->
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
                 <!-- HAMBURGER MENU (for mobile) -->
 
-                <div class="hamburger" onclick="openMenu()"><i class="fas fa-bars"></i></div>
+                <div class="hamburger" onclick="openMenu()"><i class="fas fa-bars hamburgar"></i></div>
 
                 <!-- MOBILE MENU -->
                 <div class="mobile-menu" id="mobileMenu">
@@ -195,7 +192,7 @@
                     Fabric That <br />
                     Shines You
                 </h1>
-                <a href="#" class="btn">Shop All</a>
+                <a href="#" class="hero-arrivals__btn_main">Shop now</a>
             </div>
         </div>
 
@@ -252,7 +249,7 @@
                 <p class="hero-arrivals__subtitle">
                     Be ahead of the curve with our newly arrived printed fabrics.
                 </p>
-                <a href="#" class="hero-arrivals__btn">Shop now</a>
+                <a href="#" class="best-seller__btn">Shop now</a>
             </div>
         </section>
 
@@ -341,6 +338,121 @@
                     </article>
 
                     <!-- Product 4 -->
+                    <article class="product-card">
+                        <div class="thumb">
+                            <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
+                            <span class="badge">New</span>
+                            <button class="quick-btn" aria-label="Add to Cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                    <path
+                                        stroke="#0c0101ff"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.2"
+                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
+                                    ></path>
+                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="design-title">Beige Floral Printed Kota Doria Polyester Fabric</p>
+                        <div class="meta">
+                            <p class="price">₹ 329.00 <span class="unit">Per Meter</span></p>
+                            <span class="tag">Premium Quality</span>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="thumb">
+                            <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
+                            <span class="badge">New</span>
+                            <button class="quick-btn" aria-label="Add to Cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                    <path
+                                        stroke="#0c0101ff"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.2"
+                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
+                                    ></path>
+                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="design-title">Beige Floral Printed Kota Doria Polyester Fabric</p>
+                        <div class="meta">
+                            <p class="price">₹ 329.00 <span class="unit">Per Meter</span></p>
+                            <span class="tag">Premium Quality</span>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="thumb">
+                            <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
+                            <span class="badge">New</span>
+                            <button class="quick-btn" aria-label="Add to Cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                    <path
+                                        stroke="#0c0101ff"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.2"
+                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
+                                    ></path>
+                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="design-title">Beige Floral Printed Kota Doria Polyester Fabric</p>
+                        <div class="meta">
+                            <p class="price">₹ 329.00 <span class="unit">Per Meter</span></p>
+                            <span class="tag">Premium Quality</span>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="thumb">
+                            <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
+                            <span class="badge">New</span>
+                            <button class="quick-btn" aria-label="Add to Cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                    <path
+                                        stroke="#0c0101ff"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.2"
+                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
+                                    ></path>
+                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="design-title">Beige Floral Printed Kota Doria Polyester Fabric</p>
+                        <div class="meta">
+                            <p class="price">₹ 329.00 <span class="unit">Per Meter</span></p>
+                            <span class="tag">Premium Quality</span>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="thumb">
+                            <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
+                            <span class="badge">New</span>
+                            <button class="quick-btn" aria-label="Add to Cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                    <path
+                                        stroke="#0c0101ff"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.2"
+                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
+                                    ></path>
+                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="design-title">Beige Floral Printed Kota Doria Polyester Fabric</p>
+                        <div class="meta">
+                            <p class="price">₹ 329.00 <span class="unit">Per Meter</span></p>
+                            <span class="tag">Premium Quality</span>
+                        </div>
+                    </article>
                     <article class="product-card">
                         <div class="thumb">
                             <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
@@ -904,203 +1016,267 @@
                     <a class="view-all" href="#">View all</a>
                 </div>
 
-                <div class="reviews-grid">
-                    <!-- Review 1 -->
-                    <article class="review-card gcard">
-                        <div class="gcard__top">
-                            <div class="gcard__avatar" aria-hidden="true">P</div>
-                            <div class="gcard__meta">
-                                <div class="gcard__row">
-                                    <h4 class="gcard__name">Parul Rathod</h4>
-                                    <img class="gcard__g" src="https://www.google.com/favicon.ico" alt="Google" />
+                <div class="reviews-grid-wrapper">
+                    <!-- Row 1 -->
+                    <div class="reviews-row row-1">
+                        <article class="review-card gcard">
+                            <div class="gcard__top">
+                                <div class="gcard__avatar" aria-hidden="true">P</div>
+                                <div class="gcard__meta">
+                                    <div class="gcard__row">
+                                        <h4 class="gcard__name">Parul Rathod</h4>
+                                        <img class="gcard__g" src="https://www.google.com/favicon.ico" alt="Google" />
+                                    </div>
+                                    <p class="gcard__time">4 months ago</p>
                                 </div>
-                                <p class="gcard__time">4 months ago</p>
                             </div>
-                        </div>
 
-                        <div class="gcard__stars" aria-label="5 out of 5">
-                            <!-- 5 stars (svg for crisp print-like) -->
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <span class="gcard__check" title="Verified">✔</span>
-                        </div>
+                            <div class="gcard__stars" aria-label="5 out of 5">
+                                <!-- 5 stars (svg for crisp print-like) -->
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <span class="gcard__check" title="Verified">✔</span>
+                            </div>
 
-                        <p class="gcard__text">Good fabric. Thank you.</p>
-                    </article>
-
-                    <!-- Review 2 -->
-                    <article class="review-card gcard">
-                        <div class="gcard__top">
-                            <div class="gcard__avatar">S</div>
-                            <div class="gcard__meta">
-                                <div class="gcard__row">
-                                    <h4 class="gcard__name">Samreen wase</h4>
-                                    <img class="gcard__g" src="https://www.google.com/favicon.ico" alt="Google" />
+                            <p class="gcard__text">Good fabric. Thank you.</p>
+                        </article>
+                        <article class="review-card gcard">
+                            <div class="gcard__top">
+                                <div class="gcard__avatar" aria-hidden="true">P</div>
+                                <div class="gcard__meta">
+                                    <div class="gcard__row">
+                                        <h4 class="gcard__name">Parul Rathod</h4>
+                                        <img class="gcard__g" src="https://www.google.com/favicon.ico" alt="Google" />
+                                    </div>
+                                    <p class="gcard__time">4 months ago</p>
                                 </div>
-                                <p class="gcard__time">4 months ago</p>
                             </div>
-                        </div>
-                        <div class="gcard__stars" aria-label="5 out of 5">
-                            <!-- 5 stars (svg for crisp print-like) -->
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <span class="gcard__check" title="Verified">✔</span>
-                        </div>
-                        <p class="gcard__text">Beautiful stuff.</p>
-                    </article>
 
-                    <!-- Review 3 -->
-                    <article class="review-card gcard">
-                        <div class="gcard__top">
-                            <div class="gcard__avatar">S</div>
-                            <div class="gcard__meta">
-                                <div class="gcard__row">
-                                    <h4 class="gcard__name">Sibi Varghese</h4>
-                                    <img class="gcard__g" src="https://www.google.com/favicon.ico" alt="Google" />
-                                </div>
-                                <p class="gcard__time">4 months ago</p>
+                            <div class="gcard__stars" aria-label="5 out of 5">
+                                <!-- 5 stars (svg for crisp print-like) -->
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <span class="gcard__check" title="Verified">✔</span>
                             </div>
-                        </div>
-                        <div class="gcard__stars" aria-label="5 out of 5">
-                            <!-- 5 stars (svg for crisp print-like) -->
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <span class="gcard__check" title="Verified">✔</span>
-                        </div>
-                        <p class="gcard__text">The material is feel good and I am happy with the purchase.</p>
-                    </article>
 
-                    <!-- Review 4 -->
-                    <article class="review-card gcard">
-                        <div class="gcard__top">
-                            <div class="gcard__avatar">R</div>
-                            <div class="gcard__meta">
-                                <div class="gcard__row">
-                                    <h4 class="gcard__name">Radha V</h4>
-                                    <img class="gcard__g" src="https://www.google.com/favicon.ico" alt="Google" />
+                            <p class="gcard__text">Good fabric. Thank you.</p>
+                        </article>
+                        <article class="review-card gcard">
+                            <div class="gcard__top">
+                                <div class="gcard__avatar" aria-hidden="true">P</div>
+                                <div class="gcard__meta">
+                                    <div class="gcard__row">
+                                        <h4 class="gcard__name">Parul Rathod</h4>
+                                        <img class="gcard__g" src="https://www.google.com/favicon.ico" alt="Google" />
+                                    </div>
+                                    <p class="gcard__time">4 months ago</p>
                                 </div>
-                                <p class="gcard__time">4 months ago</p>
                             </div>
-                        </div>
-                        <div class="gcard__stars" aria-label="5 out of 5">
-                            <!-- 5 stars (svg for crisp print-like) -->
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <span class="gcard__check" title="Verified">✔</span>
-                        </div>
-                        <p class="gcard__text">Exactly what I saw on website. Quality is excellent.</p>
-                    </article>
 
-                    <!-- Review 5 -->
-                    <article class="review-card gcard">
-                        <div class="gcard__top">
-                            <div class="gcard__avatar">D</div>
-                            <div class="gcard__meta">
-                                <div class="gcard__row">
-                                    <h4 class="gcard__name">Divya Vardaini</h4>
-                                    <img class="gcard__g" src="https://www.google.com/favicon.ico" alt="Google" />
-                                </div>
-                                <p class="gcard__time">2 weeks ago</p>
+                            <div class="gcard__stars" aria-label="5 out of 5">
+                                <!-- 5 stars (svg for crisp print-like) -->
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <span class="gcard__check" title="Verified">✔</span>
                             </div>
-                        </div>
-                        <div class="gcard__stars" aria-label="5 out of 5">
-                            <!-- 5 stars (svg for crisp print-like) -->
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <span class="gcard__check" title="Verified">✔</span>
-                        </div>
-                        <p class="gcard__text">I liked the print and it is very similar as it is shown.</p>
-                    </article>
 
-                    <!-- Review 6 -->
-                    <article class="review-card gcard">
-                        <div class="gcard__top">
-                            <div class="gcard__avatar">M</div>
-                            <div class="gcard__meta">
-                                <div class="gcard__row">
-                                    <h4 class="gcard__name">Mita Shah</h4>
-                                    <img class="gcard__g" src="https://www.google.com/favicon.ico" alt="Google" />
+                            <p class="gcard__text">Good fabric. Thank you.</p>
+                        </article>
+                        <article class="review-card gcard">
+                            <div class="gcard__top">
+                                <div class="gcard__avatar" aria-hidden="true">P</div>
+                                <div class="gcard__meta">
+                                    <div class="gcard__row">
+                                        <h4 class="gcard__name">Parul Rathod</h4>
+                                        <img class="gcard__g" src="https://www.google.com/favicon.ico" alt="Google" />
+                                    </div>
+                                    <p class="gcard__time">4 months ago</p>
                                 </div>
-                                <p class="gcard__time">3 weeks ago</p>
                             </div>
-                        </div>
-                        <div class="gcard__stars" aria-label="5 out of 5">
-                            <!-- 5 stars (svg for crisp print-like) -->
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <span class="gcard__check" title="Verified">✔</span>
-                        </div>
-                        <p class="gcard__text">Beautiful collection… ample choices… would like to purchase again.</p>
-                    </article>
 
-                    <!-- Review 7 -->
-                    <article class="review-card gcard">
-                        <div class="gcard__top">
-                            <div class="gcard__avatar">A</div>
-                            <div class="gcard__meta">
-                                <div class="gcard__row">
-                                    <h4 class="gcard__name">Adrita</h4>
-                                    <img class="gcard__g" src="https://www.google.com/favicon.ico" alt="Google" />
-                                </div>
-                                <p class="gcard__time">1 month ago</p>
+                            <div class="gcard__stars" aria-label="5 out of 5">
+                                <!-- 5 stars (svg for crisp print-like) -->
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <span class="gcard__check" title="Verified">✔</span>
                             </div>
-                        </div>
-                        <div class="gcard__stars" aria-label="5 out of 5">
-                            <!-- 5 stars (svg for crisp print-like) -->
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <span class="gcard__check" title="Verified">✔</span>
-                        </div>
-                        <p class="gcard__text">Good product quality and recent products same as in pic.</p>
-                    </article>
 
-                    <!-- Review 8 -->
-                    <article class="review-card gcard">
-                        <div class="gcard__top">
-                            <div class="gcard__avatar">H</div>
-                            <div class="gcard__meta">
-                                <div class="gcard__row">
-                                    <h4 class="gcard__name">Helly Kamani</h4>
-                                    <img class="gcard__g" src="https://www.google.com/favicon.ico" alt="Google" />
+                            <p class="gcard__text">Good fabric. Thank you.</p>
+                        </article>
+                        <article class="review-card gcard">
+                            <div class="gcard__top">
+                                <div class="gcard__avatar" aria-hidden="true">P</div>
+                                <div class="gcard__meta">
+                                    <div class="gcard__row">
+                                        <h4 class="gcard__name">Parul Rathod</h4>
+                                        <img class="gcard__g" src="https://www.google.com/favicon.ico" alt="Google" />
+                                    </div>
+                                    <p class="gcard__time">4 months ago</p>
                                 </div>
-                                <p class="gcard__time">2 months ago</p>
                             </div>
-                        </div>
-                        <div class="gcard__stars" aria-label="5 out of 5">
-                            <!-- 5 stars (svg for crisp print-like) -->
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
-                            <span class="gcard__check" title="Verified">✔</span>
-                        </div>
-                        <p class="gcard__text">Loved the weightless fabric. Quality is exactly as shown.</p>
-                    </article>
+
+                            <div class="gcard__stars" aria-label="5 out of 5">
+                                <!-- 5 stars (svg for crisp print-like) -->
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <span class="gcard__check" title="Verified">✔</span>
+                            </div>
+
+                            <p class="gcard__text">Good fabric. Thank you.</p>
+                        </article>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="reviews-row row-2">
+                        <article class="review-card gcard">
+                            <div class="gcard__top">
+                                <div class="gcard__avatar" aria-hidden="true">P</div>
+                                <div class="gcard__meta">
+                                    <div class="gcard__row">
+                                        <h4 class="gcard__name">Parul Rathod</h4>
+                                        <img class="gcard__g" src="https://www.google.com/favicon.ico" alt="Google" />
+                                    </div>
+                                    <p class="gcard__time">4 months ago</p>
+                                </div>
+                            </div>
+
+                            <div class="gcard__stars" aria-label="5 out of 5">
+                                <!-- 5 stars (svg for crisp print-like) -->
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <span class="gcard__check" title="Verified">✔</span>
+                            </div>
+
+                            <p class="gcard__text">Good fabric. Thank you.</p>
+                        </article>
+                        <article class="review-card gcard">
+                            <div class="gcard__top">
+                                <div class="gcard__avatar" aria-hidden="true">P</div>
+                                <div class="gcard__meta">
+                                    <div class="gcard__row">
+                                        <h4 class="gcard__name">Parul Rathod</h4>
+                                        <img class="gcard__g" src="https://www.google.com/favicon.ico" alt="Google" />
+                                    </div>
+                                    <p class="gcard__time">4 months ago</p>
+                                </div>
+                            </div>
+
+                            <div class="gcard__stars" aria-label="5 out of 5">
+                                <!-- 5 stars (svg for crisp print-like) -->
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <span class="gcard__check" title="Verified">✔</span>
+                            </div>
+
+                            <p class="gcard__text">Good fabric. Thank you.</p>
+                        </article>
+                        <article class="review-card gcard">
+                            <div class="gcard__top">
+                                <div class="gcard__avatar" aria-hidden="true">P</div>
+                                <div class="gcard__meta">
+                                    <div class="gcard__row">
+                                        <h4 class="gcard__name">Parul Rathod</h4>
+                                        <img class="gcard__g" src="https://www.google.com/favicon.ico" alt="Google" />
+                                    </div>
+                                    <p class="gcard__time">4 months ago</p>
+                                </div>
+                            </div>
+
+                            <div class="gcard__stars" aria-label="5 out of 5">
+                                <!-- 5 stars (svg for crisp print-like) -->
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <span class="gcard__check" title="Verified">✔</span>
+                            </div>
+
+                            <p class="gcard__text">Good fabric. Thank you.</p>
+                        </article>
+                        <article class="review-card gcard">
+                            <div class="gcard__top">
+                                <div class="gcard__avatar" aria-hidden="true">P</div>
+                                <div class="gcard__meta">
+                                    <div class="gcard__row">
+                                        <h4 class="gcard__name">Parul Rathod</h4>
+                                        <img class="gcard__g" src="https://www.google.com/favicon.ico" alt="Google" />
+                                    </div>
+                                    <p class="gcard__time">4 months ago</p>
+                                </div>
+                            </div>
+
+                            <div class="gcard__stars" aria-label="5 out of 5">
+                                <!-- 5 stars (svg for crisp print-like) -->
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <span class="gcard__check" title="Verified">✔</span>
+                            </div>
+
+                            <p class="gcard__text">Good fabric. Thank you.</p>
+                        </article>
+                        <article class="review-card gcard">
+                            <div class="gcard__top">
+                                <div class="gcard__avatar" aria-hidden="true">P</div>
+                                <div class="gcard__meta">
+                                    <div class="gcard__row">
+                                        <h4 class="gcard__name">Parul Rathod</h4>
+                                        <img class="gcard__g" src="https://www.google.com/favicon.ico" alt="Google" />
+                                    </div>
+                                    <p class="gcard__time">4 months ago</p>
+                                </div>
+                            </div>
+
+                            <div class="gcard__stars" aria-label="5 out of 5">
+                                <!-- 5 stars (svg for crisp print-like) -->
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <svg viewBox="0 0 24 24" class="star"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" /></svg>
+                                <span class="gcard__check" title="Verified">✔</span>
+                            </div>
+
+                            <p class="gcard__text">Good fabric. Thank you.</p>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- JS -->
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                document.querySelectorAll(".reviews-row").forEach((row) => {
+                    row.innerHTML += row.innerHTML; // duplicate reviews for seamless loop
+                    row.classList.add("scrolling"); // start animation
+                });
+            });
+        </script>
 
         <section class="products section-padding">
             <div class="container">
@@ -1650,7 +1826,7 @@
                             </select>
                             <input type="tel" placeholder="Phone" required />
                         </div>
-                        <button type="submit" class="btn">UNLOCK COUPON</button>
+                        <button type="submit" class="">UNLOCK COUPON</button>
                     </form>
 
                     <small>
@@ -1726,5 +1902,6 @@
 
         <script src="../js/utils.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
