@@ -83,3 +83,27 @@ document.addEventListener('click', function(e){
 });
 
 
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Only apply on mobile
+    if (window.innerWidth <= 768) {
+      document.querySelectorAll(".footer-col").forEach(col => {
+        // Create toggle button
+        let btn = document.createElement("span");
+        btn.classList.add("footer-toggle-btn");
+
+        // Append button to h4
+        let heading = col.querySelector("h4");
+        heading.appendChild(btn);
+
+        // Toggle show/hide
+        btn.addEventListener("click", () => {
+          col.classList.toggle("active");
+        });
+      });
+    }
+  });
+
+
+
+

@@ -19,6 +19,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="../css/utils.css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
         <!-- Layout Specific -->
         <link rel="stylesheet" href="../css/header.css" />
@@ -33,6 +34,9 @@
         <link rel="stylesheet" href="../css/style.css" />
         <link rel="stylesheet" href="../css/responsive.css" />
         <link rel="stylesheet" href="../css/theme.css" />
+
+        <!-- Add in <head> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-XXXX" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- Font Awesome for Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -96,11 +100,48 @@
                 </nav>
 
                 <!-- NAV ICONS -->
-                <div class="nav-icons">
-                    <a href="#"><i class="fas fa-search"></i></a>
-                    <a href="#"><i class="fas fa-user"></i></a>
-                    <a href="#"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
-                </div>
+                <!-- Nav Icons -->
+              <div class="nav-icons">
+  <a href="#"><i class="fas fa-search"></i></a>
+
+  <!-- User Dropdown -->
+  <div class="dropdown d-inline-block">
+    <a href="#" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="fas fa-user"></i>
+    </a>
+
+    <div class="dropdown-menu dropdown-menu-end p-3 shadow account-dropdown" aria-labelledby="userDropdown">
+      <h6 class="mb-3">Account</h6>
+
+      <!-- Sign in Button -->
+      <a href="login.html" class="btn btn-dark w-100 mb-3">Sign in</a>
+
+      <!-- Links -->
+      <div class="d-flex gap-2">
+        <a href="login.html" class="btn btn-light flex-fill"><i class="fas fa-box"></i> Orders</a>
+        <a href="login.html" class="btn btn-light flex-fill"><i class="fas fa-user-circle"></i> Profile</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Wishlist -->
+  <a href="#">
+    <i class="fas fa-heart"></i>
+    <span class="wishlist-count">0</span>
+  </a>
+
+  <!-- Cart -->
+  <a href="#">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count">0</span>
+  </a>
+</div>
+
+                <!-- CSS -->
+
+                <!-- Bootstrap + FontAwesome -->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
                 <!-- HAMBURGER MENU (for mobile) -->
 
@@ -1575,7 +1616,7 @@
             </div>
         </section>
 
-         <section class="section-padding">
+        <section class="section-padding">
             <div class="touch-feel__inner reverse">
                 <!-- Left image -->
                 <div class="touch-feel__image">
@@ -1594,101 +1635,94 @@
             </div>
         </section>
 
-
         <footer class="footer section-padding">
-  <div class="container">
+            <div class="container">
+                <!-- Signup block -->
+                <div class="footer-signup">
+                    <h3>Sign up and Save 10%</h3>
+                    <p>Sign up today and get a 10% discount code towards your first purchase.</p>
 
-    <!-- Signup block -->
-    <div class="footer-signup">
-      <h3>Sign up and Save 10%</h3>
-      <p>Sign up today and get a 10% discount code towards your first purchase.</p>
+                    <form class="signup-form">
+                        <input type="email" placeholder="Email" required />
+                        <div class="phone-input">
+                            <select>
+                                <option value="+91">🇮🇳 +91</option>
+                            </select>
+                            <input type="tel" placeholder="Phone" required />
+                        </div>
+                        <button type="submit" class="btn">UNLOCK COUPON</button>
+                    </form>
 
-      <form class="signup-form">
-        <input type="email" placeholder="Email" required />
-        <div class="phone-input">
-          <select>
-            <option value="+91">🇮🇳 +91</option>
-          </select>
-          <input type="tel" placeholder="Phone" required />
-        </div>
-        <button type="submit" class="btn">UNLOCK COUPON</button>
-      </form>
+                    <small>
+                        By signing up, you agree to receive marketing messages at the phone number or email provided. Msg and data rates may apply. View our <a href="#">privacy policy</a> and <a href="#">terms of service</a> for more info.
+                    </small>
+                </div>
 
-      <small>
-        By signing up, you agree to receive marketing messages at the phone number or email provided. Msg and data rates may apply. 
-        View our <a href="#">privacy policy</a> and <a href="#">terms of service</a> for more info.
-      </small>
-    </div>
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Main Menu</h4>
+                        <ul>
+                            <li><a href="#">New Arrival</a></li>
+                            <li><a href="#">Best Seller</a></li>
+                            <li><a href="#">Printed Fabric</a></li>
+                            <li><a href="#">Fabric Set</a></li>
+                            <li><a href="#">Dyed Fabric</a></li>
+                            <li><a href="#">Women’s Wear</a></li>
+                            <li><a href="#">Sale</a></li>
+                            <li><a href="#">Design Gallery</a></li>
+                        </ul>
+                    </div>
 
-    <!-- Footer Links -->
-    <div class="footer-links">
-      
-      <div class="footer-col">
-        <h4>Main Menu</h4>
-        <ul>
-          <li><a href="#">New Arrival</a></li>
-          <li><a href="#">Best Seller</a></li>
-          <li><a href="#">Printed Fabric</a></li>
-          <li><a href="#">Fabric Set</a></li>
-          <li><a href="#">Dyed Fabric</a></li>
-          <li><a href="#">Women’s Wear</a></li>
-          <li><a href="#">Sale</a></li>
-          <li><a href="#">Design Gallery</a></li>
-        </ul>
-      </div>
+                    <div class="footer-col">
+                        <h4>My Account</h4>
+                        <ul>
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">My Wishlist</a></li>
+                            <li><a href="#">My Orders</a></li>
+                            <li><a href="#">My Reviews</a></li>
+                        </ul>
+                    </div>
 
-      <div class="footer-col">
-        <h4>My Account</h4>
-        <ul>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Track Order</a></li>
-          <li><a href="#">My Wishlist</a></li>
-          <li><a href="#">My Orders</a></li>
-          <li><a href="#">My Reviews</a></li>
-        </ul>
-      </div>
+                    <div class="footer-col">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Reach Us</a></li>
+                            <li><a href="#">Return & Cancellation</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Wholesale Registration</a></li>
+                            <li><a href="#">Wholesale Login</a></li>
+                        </ul>
+                    </div>
 
-      <div class="footer-col">
-        <h4>Useful Links</h4>
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Reach Us</a></li>
-          <li><a href="#">Return & Cancellation</a></li>
-          <li><a href="#">Shipping Policy</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Wholesale Registration</a></li>
-          <li><a href="#">Wholesale Login</a></li>
-        </ul>
-      </div>
+                    <div class="footer-col">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><i class="fa-solid fa-phone"></i> +91 799 0105 997</li>
+                            <li><i class="fa-regular fa-envelope"></i> <a href="mailto:support@email.com">Email us</a></li>
+                            <li><i class="fa-regular fa-comment-dots"></i> <a href="#">Contact us</a></li>
+                            <li><i class="fa-brands fa-whatsapp"></i> <a href="#">WhatsApp us</a></li>
+                        </ul>
+                    </div>
+                </div>
 
-      <div class="footer-col">
-        <h4>Contact Us</h4>
-        <ul>
-          <li>📞 +91 799 0105 997</li>
-          <li>✉️ <a href="mailto:support@email.com">Email us</a></li>
-          <li>💬 <a href="#">Contact us</a></li>
-          <li>📱 <a href="#">WhatsApp us</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <!-- Bottom Bar -->
-    <div class="footer-bottom">
-      <p>© 2025 FAB VOGUE Studio Private Limited all right reserved</p>
-      <ul>
-        <li><a href="#">Refund Policy</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Shipping Policy</a></li>
-        <li><a href="#">Contact Information</a></li>
-      </ul>
-    </div>
-
-  </div>
-</footer>
-
+                <!-- Bottom Bar -->
+                <div class="footer-bottom">
+                    <p>© 2025 FAB VOGUE Studio Private Limited all right reserved</p>
+                    <ul>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Contact Information</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
         <script src="../js/utils.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

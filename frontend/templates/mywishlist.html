@@ -157,100 +157,191 @@
         </header>
 
 
-
-
-
-<!-- Privacy Policy Page -->
+<!-- Wishlist Page -->
 <div class="container py-5">
-  <!-- Title -->
-  <h2 class="mb-4">Privacy Policy</h2>
+  <h2 class="mb-4">My Wishlist</h2>
 
-  <!-- Intro -->
-  <p class="mb-4">
-    This Privacy Policy describes how your personal information is collected, used, and shared 
-    when you visit or make a purchase from our website.
-  </p>
+  <div class="row g-4">
 
-  <!-- Section 1 -->
-  <h5 class="fw-bold mt-4">Personal information we collect</h5>
-  <p>
-    When you visit the Site, we automatically collect certain information about your device, 
-    including information about your web browser, IP address, time zone, and some of the cookies 
-    that are installed on your device. Additionally, as you browse the Site, we collect information 
-    about the individual web pages or products that you view, what websites or search terms referred 
-    you to the Site, and information about how you interact with the Site. 
-    We refer to this automatically-collected information as “Device Information”.
-  </p>
+    <!-- Wishlist Item -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card wishlist-card h-100">
+        <img src="/frontend/images/categories/C-min.jpg" class="card-img-top" alt="Wishlist Product">
 
-  <!-- Section 2 -->
-  <p class="fw-bold mt-3">We collect Device Information using the following technologies:</p>
-  <ul>
-    <li>
-      <b>Cookies</b> – data files placed on your device or computer, often including an anonymous unique identifier.  
-      For more info and how to disable cookies, visit <a href="http://www.allaboutcookies.org" target="_blank">www.allaboutcookies.org</a>.
-    </li>
-    <li>
-      <b>Log files</b> – track actions occurring on the Site, collecting data including IP address, 
-      browser type, Internet service provider, referring/exit pages, and date/time stamps.
-    </li>
-    <li>
-      <b>Web beacons / tags / pixels</b> – electronic files used to record information about how you browse the Site.
-    </li>
-  </ul>
+        <div class="card-body d-flex flex-column">
+          <h6 class="card-title">Classy Blue Floral Chiffon Digital Printed Fabric</h6>
+        </div>
 
-  <!-- Section 3 -->
-  <h5 class="fw-bold mt-4">Order Information</h5>
-  <p>
-    When you make a purchase or attempt to make a purchase through the Site, we collect certain information 
-    from you, including your name, billing address, shipping address, payment information, email address, 
-    and phone number. We refer to this information as “Order Information”.
-  </p>
+        <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+          <a href="#" class="btn btn-danger w-75">View product</a>
+          <button class="btn btn-outline-secondary ms-2" aria-label="Remove from wishlist">
+            <i class="bi bi-trash"></i> <!-- Bootstrap trash icon -->
+          </button>
+        </div>
+      </div>
+    </div>
 
-  <!-- Section 4 -->
-  <h5 class="fw-bold mt-4">How we use your personal information</h5>
-  <p>
-    We use the Order Information that we collect to fulfill any orders placed through the Site 
-    (including processing your payment information, arranging for shipping, and providing you with invoices 
-    and/or order confirmations). Additionally, we use this Order Information to:
-  </p>
-  <ul>
-    <li>Communicate with you</li>
-    <li>Screen our orders for potential risk or fraud</li>
-    <li>Provide you with information or advertising relating to our products or services</li>
-  </ul>
+    <!-- Wishlist Item 2 -->
+    <div class="col-md-3 col-sm-6">
+      <div class="card wishlist-card h-100">
+        <img src="/frontend/images/categories/co-digital-printed-fabric.webp" class="card-img-top" alt="Wishlist Product">
 
-  <!-- Section 5 -->
-  <h5 class="fw-bold mt-4">Changes</h5>
-  <p>
-    We may update this privacy policy from time to time in order to reflect, for example, changes to our practices 
-    or for other operational, legal, or regulatory reasons.
-  </p>
+        <div class="card-body d-flex flex-column">
+          <h6 class="card-title">Premium Cream Pink Floral Polyester Fabric</h6>
+        </div>
 
-  <!-- Footer -->
-  <p class="mt-5 small text-muted">If you have any questions about this Privacy Policy, please contact us.</p>
+        <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
+          <a href="#" class="btn btn-danger w-75">View product</a>
+          <button class="btn btn-outline-secondary ms-2" aria-label="Remove from wishlist">
+            <i class="bi bi-trash"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-<!-- CSS -->
+<!-- Custom CSS -->
 <style>
-.container {
-  max-width: 850px;
+.wishlist-card {
+  border-radius: 8px;
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
 }
-h2, h5 {
-  color: #222;
+.wishlist-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-ul {
-  margin-top: 10px;
+.wishlist-card img {
+  border-bottom: 1px solid #eee;
+  object-fit: cover;
 }
-li {
-  margin-bottom: 8px;
+.card-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
 }
 </style>
 
 
+  <section class="products section-padding">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">Fresh Designs</h2>
+                    <a class="view-all" href="#">View all</a>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <div class="thumb">
+                            <img src="/frontend/images/categories/C-min.jpg" alt="Premium Cream Pink Floral Polyester Fabric - 1" />
+                            <span class="badge">New</span>
+                            <button class="quick-btn" aria-label="Add to Cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                    <path
+                                        stroke="#0c0101ff"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.2"
+                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
+                                    ></path>
+                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="design-title">Premium Cream Pink Floral Polyester Fabric - 1</p>
+                        <div class="meta">
+                            <p class="price">₹ 319.00 <span class="unit">Per Meter</span></p>
+                            <span class="tag">Premium Quality</span>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <div class="thumb">
+                            <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Light Blue Orange Floral Printed Premium Polyester Fabric" />
+                            <span class="badge">New</span>
+                            <button class="quick-btn" aria-label="Add to Cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                    <path
+                                        stroke="#0c0101ff"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.2"
+                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
+                                    ></path>
+                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="design-title">Light Blue Orange Floral Printed Premium Polyester Fabric</p>
+                        <div class="meta">
+                            <p class="price">₹ 349.00 <span class="unit">Per Meter</span></p>
+                            <span class="tag">Premium Quality</span>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <div class="thumb">
+                            <img src="/frontend/images/categories/co-self-patterned-dyed-fabric.webp" alt="Beige Multi Floral Ditsy Printed Polyester Fabric" />
+                            <span class="badge">New</span>
+                            <button class="quick-btn" aria-label="Add to Cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                    <path
+                                        stroke="#0c0101ff"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.2"
+                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
+                                    ></path>
+                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="design-title">Beige Multi Floral Ditsy Printed Polyester Fabric</p>
+                        <div class="meta">
+                            <p class="price">₹ 299.00 <span class="unit">Per Meter</span></p>
+                            <span class="tag">Premium Quality</span>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card">
+                        <div class="thumb">
+                            <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
+                            <span class="badge">New</span>
+                            <button class="quick-btn" aria-label="Add to Cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                    <path
+                                        stroke="#0c0101ff"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.2"
+                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
+                                    ></path>
+                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="design-title">Beige Floral Printed Kota Doria Polyester Fabric</p>
+                        <div class="meta">
+                            <p class="price">₹ 329.00 <span class="unit">Per Meter</span></p>
+                            <span class="tag">Premium Quality</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
 
 
 
+
+
+        
 
         <footer class="footer section-padding">
             <div class="container">

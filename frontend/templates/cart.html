@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- =========================
+         META INFORMATION
+    ========================= -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- =========================
+         PAGE TITLE
+    ========================= -->
+        <title>Home | MyShop</title>
+
+        <!-- =========================
+         CSS FILES (ORDER IMPORTANT!)
+    ========================= -->
+        <!-- Reset & Common Styles -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="../css/utils.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+        <!-- Layout Specific -->
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/footer.css" />
+
+        <!-- Page Specific -->
+        <link rel="stylesheet" href="../css/product.css" />
+        <link rel="stylesheet" href="../css/cart.css" />
+        <link rel="stylesheet" href="../css/auth.css" />
+
+        <!-- Main Style & Responsive -->
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/responsive.css" />
+        <link rel="stylesheet" href="../css/theme.css" />
+
+        <!-- Add in <head> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-XXXX" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Font Awesome for Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    </head>
+    <body>
+        <!-- =========================
+         HEADER + NAVBAR
+    ========================= -->
+        <header class="navbar navbar__style">
+            <div class="container navbar__main">
+                <!-- LOGO -->
+                <div class="logo">
+                    <img src="/frontend/images/home_img/white_logo.avif" alt="Logo" />
+                </div>
+
+                
+
+                <!-- NAVIGATION -->
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">New Arrival</a></li>
+                        <li><a href="#">Best Seller</a></li>
+
+                        <!-- Mega Menu -->
+                        <li class="dropdown">
+                            <a href="#">Printed Fabric <i class="fas fa-caret-down"></i></a>
+                            <div class="mega-menu">
+                                <!-- Column 1 -->
+                                <div class="mega-column">
+                                    <h4>Polyester Fabric</h4>
+                                    <a href="#">Japan Satin</a>
+                                    <a href="#">Tusser Silk</a>
+                                    <a href="#">Kora Silk</a>
+                                </div>
+
+                                <!-- Column 2 -->
+                                <div class="mega-column">
+                                    <h4>Pure & Viscose Fabric</h4>
+                                    <a href="#">Pure Cotton</a>
+                                    <a href="#">Pure Chiffon</a>
+                                    <a href="#">Pure Georgette</a>
+                                </div>
+
+                                <!-- Column 3 -->
+                                <div class="mega-column">
+                                    <h4>Fabric Quality</h4>
+                                    <a href="#">Pure Fabric</a>
+                                    <a href="#">Viscose Fabric</a>
+                                    <a href="#">Polyester Fabric</a>
+                                </div>
+
+                                <!-- Background Image Column -->
+                                <div class="mega-bg"></div>
+                            </div>
+                        </li>
+
+                        <li><a href="#">Fabric Set</a></li>
+                        <li><a href="#">Dyed Fabric</a></li>
+                        <li><a href="#">Women's Wear</a></li>
+                        <li><a href="#">Sale</a></li>
+                        <li><a href="#">Design Gallery</a></li>
+                    </ul>
+                </nav>
+
+                <!-- NAV ICONS -->
+                <div class="nav-icons">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="fas fa-user"></i></a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                </div>
+
+                <!-- HAMBURGER MENU (for mobile) -->
+
+                <div class="hamburger" onclick="openMenu()"><i class="fas fa-bars"></i></div>
+
+                <!-- MOBILE MENU -->
+                <div class="mobile-menu" id="mobileMenu">
+                    <div class="menu-header">
+                        <span id="menuBack" onclick="goBack()">
+                            <span class="material-icons">arrow_back</span>
+                        </span>
+                        <span id="menuTitle">Menu</span>
+                        <span onclick="closeMenu()">✕</span>
+                    </div>
+
+                    <ul class="menu-level menu-root active">
+                        <li><a href="#">New Arrival</a></li>
+                        <li><a href="#">Best Seller</a></li>
+                        <li onclick="openSubmenu('printed')">Printed Fabric ›</li>
+                        <li><a href="#">Fabric Set</a></li>
+                        <li onclick="openSubmenu('dyed')">Dyed Fabric ›</li>
+                        <li onclick="openSubmenu('women')">Women's Wear ›</li>
+                        <li><a href="#">Sale</a></li>
+                        <li><a href="#">Design Gallery</a></li>
+                    </ul>
+
+                    <!-- SUBMENU 1 -->
+                    <ul class="menu-level" id="submenu-printed">
+                        <li class="submenu-title">Printed Fabric</li>
+                        <li onclick="openSubmenu('polyester')">Polyester Fabric ›</li>
+                        <li onclick="openSubmenu('pure')">Pure & Viscose ›</li>
+                        <li><a href="#">Fabric Quality</a></li>
+                    </ul>
+
+                    <!-- SUBMENU 2 -->
+                    <ul class="menu-level" id="submenu-polyester">
+                        <li class="submenu-title">Polyester Fabric</li>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Japan Satin</a></li>
+                        <li><a href="#">Tusser Silk</a></li>
+                        <li><a href="#">Kora Silk</a></li>
+                        <li><a href="#">Organza</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+  <!-- Cart Page -->
+<div class="container py-5">
+  <div class="row">
+    
+    <!-- Left: Cart Items -->
+    <div class="col-md-8">
+      <h2 class="mb-4">Cart <span class="text-muted fs-5">(4)</span></h2>
+
+      <!-- Cart Item -->
+      <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
+        <div class="d-flex align-items-center">
+          <img src="/frontend/images/categories/C-min.jpg" alt="Product" class="img-fluid rounded border me-3" style="width:100px; height:100px; object-fit:cover;">
+          <div>
+            <h6 class="mb-1">Light Blue Orange Floral Printed Premium Polyester Fabric</h6>
+            <small class="text-muted">WELCOME</small>
+            <p class="mb-1">
+              <span class="fw-bold">₹ 287.10</span> 
+              <del class="text-muted">₹ 319.00</del>
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <button class="btn btn-light border">−</button>
+          <input type="number" value="1" min="1" class="form-control text-center mx-2" style="width:70px;">
+          <button class="btn btn-light border">+</button>
+          <button class="btn btn-outline-secondary ms-3">♡</button>
+        </div>
+
+        <div class="fw-bold">₹ 287.10</div>
+      </div>
+
+      <!-- Cart Item 2 -->
+      <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
+        <div class="d-flex align-items-center">
+          <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Product" class="img-fluid rounded border me-3" style="width:100px; height:100px; object-fit:cover;">
+          <div>
+            <h6 class="mb-1">Yellow Green Stripes Digital Printed Fabric - Crepe</h6>
+            <small class="text-muted">WELCOME</small>
+            <p class="mb-1">
+              <span class="fw-bold">₹ 261.90</span> 
+              <del class="text-muted">₹ 291.00</del>
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <button class="btn btn-light border">−</button>
+          <input type="number" value="1" min="1" class="form-control text-center mx-2" style="width:70px;">
+          <button class="btn btn-light border">+</button>
+          <button class="btn btn-outline-secondary ms-3">♡</button>
+        </div>
+
+        <div class="fw-bold">₹ 261.90</div>
+      </div>
+
+      <!-- Cart Item 3 -->
+      <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
+        <div class="d-flex align-items-center">
+          <img src="/frontend/images/categories/C-min.jpg" alt="Product" class="img-fluid rounded border me-3" style="width:100px; height:100px; object-fit:cover;">
+          <div>
+            <h6 class="mb-1">Premium Cream Pink Floral Polyester Fabric - 145CM Width</h6>
+            <small class="text-muted">WELCOME</small>
+            <p class="mb-1">
+              <span class="fw-bold">₹ 574.20</span> 
+              <del class="text-muted">₹ 319.00</del>
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <button class="btn btn-light border">−</button>
+          <input type="number" value="2" min="1" class="form-control text-center mx-2" style="width:70px;">
+          <button class="btn btn-light border">+</button>
+          <button class="btn btn-outline-secondary ms-3">♡</button>
+        </div>
+
+        <div class="fw-bold">₹ 574.20</div>
+      </div>
+
+    </div>
+
+    <!-- Right: Cart Summary -->
+    <div class="col-md-4">
+      <div class="p-4 bg-light rounded">
+        <div class="mb-3">
+          <label class="form-label">Special instructions</label>
+          <textarea class="form-control" rows="2"></textarea>
+        </div>
+        <div class="d-flex justify-content-between mb-2">
+          <span>Estimated total</span>
+          <span class="fw-bold fs-5">₹ 1,123.20</span>
+        </div>
+        <p class="text-muted small">Taxes included. Discounts and shipping calculated at checkout.</p>
+        <button class="btn btn-dark w-100 fw-bold py-2">Check Offers</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- CSS -->
+<style>
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+</style>
+
+
+
+  <section class="products section-padding">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">Fresh Designs</h2>
+                    <a class="view-all" href="#">View all</a>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <div class="thumb">
+                            <img src="/frontend/images/categories/C-min.jpg" alt="Premium Cream Pink Floral Polyester Fabric - 1" />
+                            <span class="badge">New</span>
+                            <button class="quick-btn" aria-label="Add to Cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                    <path
+                                        stroke="#0c0101ff"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.2"
+                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
+                                    ></path>
+                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="design-title">Premium Cream Pink Floral Polyester Fabric - 1</p>
+                        <div class="meta">
+                            <p class="price">₹ 319.00 <span class="unit">Per Meter</span></p>
+                            <span class="tag">Premium Quality</span>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <div class="thumb">
+                            <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Light Blue Orange Floral Printed Premium Polyester Fabric" />
+                            <span class="badge">New</span>
+                            <button class="quick-btn" aria-label="Add to Cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                    <path
+                                        stroke="#0c0101ff"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.2"
+                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
+                                    ></path>
+                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="design-title">Light Blue Orange Floral Printed Premium Polyester Fabric</p>
+                        <div class="meta">
+                            <p class="price">₹ 349.00 <span class="unit">Per Meter</span></p>
+                            <span class="tag">Premium Quality</span>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <div class="thumb">
+                            <img src="/frontend/images/categories/co-self-patterned-dyed-fabric.webp" alt="Beige Multi Floral Ditsy Printed Polyester Fabric" />
+                            <span class="badge">New</span>
+                            <button class="quick-btn" aria-label="Add to Cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                    <path
+                                        stroke="#0c0101ff"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.2"
+                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
+                                    ></path>
+                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="design-title">Beige Multi Floral Ditsy Printed Polyester Fabric</p>
+                        <div class="meta">
+                            <p class="price">₹ 299.00 <span class="unit">Per Meter</span></p>
+                            <span class="tag">Premium Quality</span>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card">
+                        <div class="thumb">
+                            <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
+                            <span class="badge">New</span>
+                            <button class="quick-btn" aria-label="Add to Cart">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                    <path
+                                        stroke="#0c0101ff"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="1.2"
+                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
+                                    ></path>
+                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="design-title">Beige Floral Printed Kota Doria Polyester Fabric</p>
+                        <div class="meta">
+                            <p class="price">₹ 329.00 <span class="unit">Per Meter</span></p>
+                            <span class="tag">Premium Quality</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        
+
+        <footer class="footer section-padding">
+            <div class="container">
+                <!-- Signup block -->
+                <div class="footer-signup">
+                    <h3>Sign up and Save 10%</h3>
+                    <p>Sign up today and get a 10% discount code towards your first purchase.</p>
+
+                    <form class="signup-form">
+                        <input type="email" placeholder="Email" required />
+                        <div class="phone-input">
+                            <select>
+                                <option value="+91">🇮🇳 +91</option>
+                            </select>
+                            <input type="tel" placeholder="Phone" required />
+                        </div>
+                        <button type="submit" class="btn">UNLOCK COUPON</button>
+                    </form>
+
+                    <small>
+                        By signing up, you agree to receive marketing messages at the phone number or email provided. Msg and data rates may apply. View our <a href="#">privacy policy</a> and <a href="#">terms of service</a> for more info.
+                    </small>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Main Menu</h4>
+                        <ul>
+                            <li><a href="#">New Arrival</a></li>
+                            <li><a href="#">Best Seller</a></li>
+                            <li><a href="#">Printed Fabric</a></li>
+                            <li><a href="#">Fabric Set</a></li>
+                            <li><a href="#">Dyed Fabric</a></li>
+                            <li><a href="#">Women’s Wear</a></li>
+                            <li><a href="#">Sale</a></li>
+                            <li><a href="#">Design Gallery</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>My Account</h4>
+                        <ul>
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">My Wishlist</a></li>
+                            <li><a href="#">My Orders</a></li>
+                            <li><a href="#">My Reviews</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Reach Us</a></li>
+                            <li><a href="#">Return & Cancellation</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Wholesale Registration</a></li>
+                            <li><a href="#">Wholesale Login</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><i class="fa-solid fa-phone"></i> +91 799 0105 997</li>
+                            <li><i class="fa-regular fa-envelope"></i> <a href="mailto:support@email.com">Email us</a></li>
+                            <li><i class="fa-regular fa-comment-dots"></i> <a href="#">Contact us</a></li>
+                            <li><i class="fa-brands fa-whatsapp"></i> <a href="#">WhatsApp us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bottom Bar -->
+                <div class="footer-bottom">
+                    <p>© 2025 FAB VOGUE Studio Private Limited all right reserved</p>
+                    <ul>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Contact Information</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../js/utils.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
