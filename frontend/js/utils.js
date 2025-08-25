@@ -117,35 +117,6 @@ document.addEventListener('click', function(e){
   });
 
 
-  const slider = document.querySelector('.products-grid');
-let isDown = false;
-let startX;
-let scrollLeft;
-
-slider.addEventListener('mousedown', (e) => {
-  isDown = true;
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-  slider.style.cursor = "grabbing"; // show grab effect
-});
-
-slider.addEventListener('mouseup', () => {
-  isDown = false;
-  slider.style.cursor = "grab";
-});
-
-slider.addEventListener('mouseleave', () => {
-  isDown = false; // stop if pointer leaves while pressed
-  slider.style.cursor = "grab";
-});
-
-slider.addEventListener('mousemove', (e) => {
-  if (!isDown) return; // only move when pressed
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const walk = (x - startX) * 2; // adjust speed
-  slider.scrollLeft = scrollLeft - walk;
-});
 
 
 
@@ -167,6 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     row.classList.add("scrolling"); // start scroll
   });
 });
+
 
 
 
