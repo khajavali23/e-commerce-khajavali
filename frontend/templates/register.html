@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- =========================
+         META INFORMATION
+    ========================= -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- =========================
+         PAGE TITLE
+    ========================= -->
+        <title>Home | MyShop</title>
+
+        <!-- =========================
+         CSS FILES (ORDER IMPORTANT!)
+    ========================= -->
+        <!-- Reset & Common Styles -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="../css/utils.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+        <!-- Layout Specific -->
+        <link rel="stylesheet" href="../css/header.css" />
+        <link rel="stylesheet" href="../css/footer.css" />
+
+        <!-- Page Specific -->
+        <link rel="stylesheet" href="../css/product.css" />
+        <link rel="stylesheet" href="../css/cart.css" />
+        <link rel="stylesheet" href="../css/auth.css" />
+
+        <!-- Main Style & Responsive -->
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/responsive.css" />
+        <link rel="stylesheet" href="../css/theme.css" />
+
+        <!-- Add in <head> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-XXXX" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Font Awesome for Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    </head>
+    <body>
+        <!-- =========================
+         HEADER + NAVBAR
+    ========================= -->
+        <header class="navbar navbar__style">
+            <div class="container navbar__main">
+                <!-- LOGO -->
+                <div class="logo">
+                    <img src="/frontend/images/home_img/white_logo.avif" alt="Logo" />
+                </div>
+
+                
+
+                <!-- NAVIGATION -->
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">New Arrival</a></li>
+                        <li><a href="#">Best Seller</a></li>
+
+                        <!-- Mega Menu -->
+                        <li class="dropdown">
+                            <a href="#">Printed Fabric <i class="fas fa-caret-down"></i></a>
+                            <div class="mega-menu">
+                                <!-- Column 1 -->
+                                <div class="mega-column">
+                                    <h4>Polyester Fabric</h4>
+                                    <a href="#">Japan Satin</a>
+                                    <a href="#">Tusser Silk</a>
+                                    <a href="#">Kora Silk</a>
+                                </div>
+
+                                <!-- Column 2 -->
+                                <div class="mega-column">
+                                    <h4>Pure & Viscose Fabric</h4>
+                                    <a href="#">Pure Cotton</a>
+                                    <a href="#">Pure Chiffon</a>
+                                    <a href="#">Pure Georgette</a>
+                                </div>
+
+                                <!-- Column 3 -->
+                                <div class="mega-column">
+                                    <h4>Fabric Quality</h4>
+                                    <a href="#">Pure Fabric</a>
+                                    <a href="#">Viscose Fabric</a>
+                                    <a href="#">Polyester Fabric</a>
+                                </div>
+
+                                <!-- Background Image Column -->
+                                <div class="mega-bg"></div>
+                            </div>
+                        </li>
+
+                        <li><a href="#">Fabric Set</a></li>
+                        <li><a href="#">Dyed Fabric</a></li>
+                        <li><a href="#">Women's Wear</a></li>
+                        <li><a href="#">Sale</a></li>
+                        <li><a href="#">Design Gallery</a></li>
+                    </ul>
+                </nav>
+
+                <!-- NAV ICONS -->
+                <div class="nav-icons">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                    <a href="#"><i class="fas fa-user"></i></a>
+                    <a href="#"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                </div>
+
+                <!-- HAMBURGER MENU (for mobile) -->
+
+                <div class="hamburger" onclick="openMenu()"><i class="fas fa-bars"></i></div>
+
+                <!-- MOBILE MENU -->
+                <div class="mobile-menu" id="mobileMenu">
+                    <div class="menu-header">
+                        <span id="menuBack" onclick="goBack()">
+                            <span class="material-icons">arrow_back</span>
+                        </span>
+                        <span id="menuTitle">Menu</span>
+                        <span onclick="closeMenu()">✕</span>
+                    </div>
+
+                    <ul class="menu-level menu-root active">
+                        <li><a href="#">New Arrival</a></li>
+                        <li><a href="#">Best Seller</a></li>
+                        <li onclick="openSubmenu('printed')">Printed Fabric ›</li>
+                        <li><a href="#">Fabric Set</a></li>
+                        <li onclick="openSubmenu('dyed')">Dyed Fabric ›</li>
+                        <li onclick="openSubmenu('women')">Women's Wear ›</li>
+                        <li><a href="#">Sale</a></li>
+                        <li><a href="#">Design Gallery</a></li>
+                    </ul>
+
+                    <!-- SUBMENU 1 -->
+                    <ul class="menu-level" id="submenu-printed">
+                        <li class="submenu-title">Printed Fabric</li>
+                        <li onclick="openSubmenu('polyester')">Polyester Fabric ›</li>
+                        <li onclick="openSubmenu('pure')">Pure & Viscose ›</li>
+                        <li><a href="#">Fabric Quality</a></li>
+                    </ul>
+
+                    <!-- SUBMENU 2 -->
+                    <ul class="menu-level" id="submenu-polyester">
+                        <li class="submenu-title">Polyester Fabric</li>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Japan Satin</a></li>
+                        <li><a href="#">Tusser Silk</a></li>
+                        <li><a href="#">Kora Silk</a></li>
+                        <li><a href="#">Organza</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+<!-- Register Page Wrapper -->
+<div class="register-page d-flex align-items-center justify-content-center mt-7">
+  <div class="card shadow-sm p-4" style="width: 400px; border-radius: 10px;">
+
+    <!-- Logo -->
+    <div class="text-center mb-3">
+      <img src="/frontend/images/logo.png" alt="Logo" style="max-height: 50px;">
+      <h5 class="mt-2">Create an account</h5>
+      <p class="text-muted" style="font-size:14px;">Sign up to get started</p>
+    </div>
+
+    <!-- Form -->
+    <form>
+      <div class="mb-3"><input type="text" class="form-control" placeholder="Full Name"></div>
+      <div class="mb-3"><input type="email" class="form-control" placeholder="Email"></div>
+      <div class="mb-3"><input type="password" class="form-control" placeholder="Password"></div>
+      <div class="mb-3"><input type="password" class="form-control" placeholder="Confirm Password"></div>
+
+      <button class="btn w-100" style="background:#d85c3f; color:#fff; font-weight:600;">Register</button>
+    </form>
+
+    <!-- Divider -->
+    <div class="d-flex align-items-center my-3">
+      <hr class="flex-grow-1">
+      <span class="px-2 text-muted">or</span>
+      <hr class="flex-grow-1">
+    </div>
+
+    <!-- Social Buttons -->
+    <div class="d-flex justify-content-between mb-3">
+      <button class="btn btn-outline-secondary flex-fill me-2 login_page_style">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" width="20" class="me-2"> Google
+      </button>
+      <button class="btn btn-outline-secondary flex-fill ms-2">
+        <i class="bi bi-facebook me-2 text-primary"></i> Facebook
+      </button>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center mt-3" style="font-size:13px;">
+      <p class="mb-1">Already have an account? <a href="login.html">Sign in</a></p>
+      <a href="#" class="text-muted me-2">Privacy policy</a>
+      <a href="#" class="text-muted">Terms of service</a>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        <footer class="footer section-padding">
+            <div class="container">
+                <!-- Signup block -->
+                <div class="footer-signup">
+                    <h3>Sign up and Save 10%</h3>
+                    <p>Sign up today and get a 10% discount code towards your first purchase.</p>
+
+                    <form class="signup-form">
+                        <input type="email" placeholder="Email" required />
+                        <div class="phone-input">
+                            <select>
+                                <option value="+91">🇮🇳 +91</option>
+                            </select>
+                            <input type="tel" placeholder="Phone" required />
+                        </div>
+                        <button type="submit" class="btn">UNLOCK COUPON</button>
+                    </form>
+
+                    <small>
+                        By signing up, you agree to receive marketing messages at the phone number or email provided. Msg and data rates may apply. View our <a href="#">privacy policy</a> and <a href="#">terms of service</a> for more info.
+                    </small>
+                </div>
+
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Main Menu</h4>
+                        <ul>
+                            <li><a href="#">New Arrival</a></li>
+                            <li><a href="#">Best Seller</a></li>
+                            <li><a href="#">Printed Fabric</a></li>
+                            <li><a href="#">Fabric Set</a></li>
+                            <li><a href="#">Dyed Fabric</a></li>
+                            <li><a href="#">Women’s Wear</a></li>
+                            <li><a href="#">Sale</a></li>
+                            <li><a href="#">Design Gallery</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>My Account</h4>
+                        <ul>
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">My Wishlist</a></li>
+                            <li><a href="#">My Orders</a></li>
+                            <li><a href="#">My Reviews</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Reach Us</a></li>
+                            <li><a href="#">Return & Cancellation</a></li>
+                            <li><a href="#">Shipping Policy</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Wholesale Registration</a></li>
+                            <li><a href="#">Wholesale Login</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Contact Us</h4>
+                        <ul>
+                            <li><i class="fa-solid fa-phone"></i> +91 799 0105 997</li>
+                            <li><i class="fa-regular fa-envelope"></i> <a href="mailto:support@email.com">Email us</a></li>
+                            <li><i class="fa-regular fa-comment-dots"></i> <a href="#">Contact us</a></li>
+                            <li><i class="fa-brands fa-whatsapp"></i> <a href="#">WhatsApp us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Bottom Bar -->
+                <div class="footer-bottom">
+                    <p>© 2025 FAB VOGUE Studio Private Limited all right reserved</p>
+                    <ul>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Contact Information</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../js/utils.js"></script>
+        <!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

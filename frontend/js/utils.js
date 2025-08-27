@@ -141,4 +141,114 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+function toggleFilter(button, id) {
+  const item = button.parentElement;
+  item.classList.toggle("active");
 
+  // Toggle icon text
+  const icon = button.querySelector(".icon");
+  if (item.classList.contains("active")) {
+    icon.textContent = "−"; // minus when open
+  } else {
+    icon.textContent = "+"; // plus when closed
+  }
+}
+
+
+
+
+
+function toggleDropdown() {
+  const menu = document.getElementById("sortMenu");
+  menu.style.display = menu.style.display === "block" ? "none" : "block";
+}
+
+// Close dropdown if clicked outside
+document.addEventListener("click", function(e) {
+  if (!e.target.closest(".custom-dropdown")) {
+    document.getElementById("sortMenu").style.display = "none";
+  }
+});
+
+
+
+function nextImage(button) {
+  const thumb = button.closest(".thumb");
+  const img = thumb.querySelector(".main-img");
+  const images = JSON.parse(img.getAttribute("data-images"));
+
+  let currentIndex = images.indexOf(img.getAttribute("src"));
+  currentIndex = (currentIndex + 1) % images.length;
+  img.setAttribute("src", images[currentIndex]);
+}
+
+function prevImage(button) {
+  const thumb = button.closest(".thumb");
+  const img = thumb.querySelector(".main-img");
+  const images = JSON.parse(img.getAttribute("data-images"));
+
+  let currentIndex = images.indexOf(img.getAttribute("src"));
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  img.setAttribute("src", images[currentIndex]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function toggleFilter(button, id){
+  button.parentElement.classList.toggle("active");
+}
+
+function toggleDropdown(){
+  document.getElementById("sortMenu").classList.toggle("show");
+}
+
+function openFilter(){
+  document.getElementById("mobileFilter").classList.add("active");
+}
+
+function closeFilter(){
+  document.getElementById("mobileFilter").classList.remove("active");
+}
+
+function prevImage(btn){
+  const img = btn.parentElement.querySelector(".main-img");
+  let imgs = JSON.parse(img.getAttribute("data-images"));
+  let current = imgs.indexOf(img.src.split(window.location.origin)[1]);
+  img.src = imgs[(current - 1 + imgs.length) % imgs.length];
+}
+
+function nextImage(btn){
+  const img = btn.parentElement.querySelector(".main-img");
+  let imgs = JSON.parse(img.getAttribute("data-images"));
+  let current = imgs.indexOf(img.src.split(window.location.origin)[1]);
+  img.src = imgs[(current + 1) % imgs.length];
+}
+
+function toggleMore(btn) {
+  const moreBox = btn.previousElementSibling;
+  const textSpan = btn.querySelector(".text");
+  const iconSpan = btn.querySelector(".icon");
+
+  if (!moreBox.classList.contains("open")) {
+    moreBox.classList.add("open");
+    btn.classList.add("active");
+    textSpan.textContent = "Show less";
+    iconSpan.textContent = "▲";
+  } else {
+    moreBox.classList.remove("open");
+    btn.classList.remove("active");
+    textSpan.textContent = "Show more";
+    iconSpan.textContent = "▼";
+  }
+}

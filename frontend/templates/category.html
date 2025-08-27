@@ -20,8 +20,8 @@
         <link rel="stylesheet" href="../css/utils.css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
         <!-- Bootstrap 5 CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
         <!-- Layout Specific -->
         <link rel="stylesheet" href="../css/header.css" />
@@ -53,8 +53,6 @@
                 <div class="logo">
                     <img src="/frontend/images/home_img/white_logo.avif" alt="Logo" />
                 </div>
-
-                
 
                 <!-- NAVIGATION -->
                 <nav>
@@ -156,240 +154,533 @@
             </div>
         </header>
 
-
-
-   <!-- Category Page -->
-<div class="container py-5">
-  <div class="row">
-    
-    <!-- Left: Filters -->
-    <div class="col-md-3">
-      <h5 class="mb-3">Filters</h5>
-      
-      <div class="accordion" id="filtersAccordion">
-        
-        <!-- Quality -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filterQuality">
-              QUALITY
-            </button>
-          </h2>
-          <div id="filterQuality" class="accordion-collapse collapse" data-bs-parent="#filtersAccordion">
-            <div class="accordion-body">
-              <label><input type="checkbox"> Premium</label><br>
-              <label><input type="checkbox"> Standard</label>
+        <!-- ✅ Category Banner -->
+        <div class="category-banner">
+            <div class="banner-bg">
+                <img src="/frontend/images/categories/C-min.jpg" alt="Best Seller Banner" />
             </div>
-          </div>
+            <div class="container">
+                <div class="banner-content">
+                    <h1 class="banner-title">Best Seller</h1>
+                </div>
+            </div>
         </div>
 
-        <!-- Fabric -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filterFabric">
-              FABRIC
-            </button>
-          </h2>
-          <div id="filterFabric" class="accordion-collapse collapse" data-bs-parent="#filtersAccordion">
-            <div class="accordion-body">
-              <label><input type="checkbox"> Crepe</label><br>
-              <label><input type="checkbox"> Cotton</label><br>
-              <label><input type="checkbox"> Silk</label>
-            </div>
-          </div>
-        </div>
+        <!-- Category Page -->
+        <div class="container py-5">
+            <div class="row">
+                <!-- ✅ Mobile Filter Button -->
+                <div class="mobile-filter-bar d-md-none mb-3">
+                    <button class="filter-toggle" onclick="openFilter()">☰ Filter</button>
+                </div>
 
-        <!-- Width -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filterWidth">
-              WIDTH
-            </button>
-          </h2>
-          <div id="filterWidth" class="accordion-collapse collapse" data-bs-parent="#filtersAccordion">
-            <div class="accordion-body">
-              <label><input type="checkbox"> 44 Inch</label><br>
-              <label><input type="checkbox"> 56 Inch</label>
-            </div>
-          </div>
-        </div>
+                <div class="col-md-3 d-none d-md-block">
+                    <h5 class="mb-3">Filters</h5>
+                    <div class="filters-box">
+                        <!-- QUALITY -->
+                        <div class="filter-item">
+                            <button class="filter-header" type="button" onclick="toggleFilter(this)">
+                                QUALITY
+                            </button>
+                            <div class="filter-body">
+                                <label><input type="checkbox" /> Bemberg</label><br />
+                                <label><input type="checkbox" /> Polyester</label><br />
+                                <label><input type="checkbox" /> Pure</label><br />
+                                <label><input type="checkbox" /> Viscose</label><br />
 
-        <!-- Price -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filterPrice">
-              PRICE
-            </button>
-          </h2>
-          <div id="filterPrice" class="accordion-collapse collapse" data-bs-parent="#filtersAccordion">
-            <div class="accordion-body">
-              <label><input type="checkbox"> ₹200 - ₹300</label><br>
-              <label><input type="checkbox"> ₹300 - ₹400</label>
-            </div>
-          </div>
-        </div>
+                                <!-- Hidden Extra -->
+                                <div class="more-options">
+                                    <label><input type="checkbox" /> Silk</label><br />
+                                    <label><input type="checkbox" /> Nylon</label><br />
+                                </div>
 
-      </div>
-    </div>
-    
-    <!-- Right: Product Grid -->
-    <div class="col-md-9">
-      <div class="row g-4">
-        
-        <!-- Product 1 -->
-        <div class="col-md-4 col-sm-6">
-          <article class="product-card">
-            <div class="thumb">
-              <img src="/frontend/images/categories/C-min.jpg" alt="Premium Cream Pink Floral Polyester Fabric - 1" />
-              <span class="badge">New</span>
-              <button class="quick-btn" aria-label="Add to Cart">
-                <!-- Your SVG Icon -->
-              </button>
-            </div>
-            <p class="design-title">Premium Cream Pink Floral Polyester Fabric - 1</p>
-            <div class="meta">
-              <p class="price">₹ 319.00 <span class="unit">Per Meter</span></p>
-              <span class="tag">Premium Quality</span>
-            </div>
-          </article>
-        </div>
+                                <!-- Show More Button -->
+                                <button type="button" class="show-more-btn" onclick="toggleMore(this)">
+                                    <span class="text">Show more</span>
+                                    <span class="icon">
+                                        <!-- SVG Chevron Down -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M5 7l5 5 5-5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <button class="filter-header" type="button" onclick="toggleFilter(this)">
+                                Fabric
+                            </button>
+                            <div class="filter-body">
+                                <label><input type="checkbox" /> Bemberg</label><br />
+                                <label><input type="checkbox" /> Polyester</label><br />
+                                <label><input type="checkbox" /> Pure</label><br />
+                                <label><input type="checkbox" /> Viscose</label><br />
 
-        <!-- Product 2 -->
-        <div class="col-md-4 col-sm-6">
-          <article class="product-card">
-            <div class="thumb">
-              <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Premium Cream Pink Floral Polyester Fabric - 2" />
-              <span class="badge">Sale</span>
-              <button class="quick-btn" aria-label="Add to Cart">
-                <!-- Your SVG Icon -->
-              </button>
-            </div>
-            <p class="design-title">Premium Cream Pink Floral Polyester Fabric - 2</p>
-            <div class="meta">
-              <p class="price">₹ 299.00 <span class="unit">Per Meter</span></p>
-              <span class="tag">Best Seller</span>
-            </div>
-          </article>
-        </div>
-         <div class="col-md-4 col-sm-6">
-          <article class="product-card">
-            <div class="thumb">
-              <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Premium Cream Pink Floral Polyester Fabric - 2" />
-              <span class="badge">Sale</span>
-              <button class="quick-btn" aria-label="Add to Cart">
-                <!-- Your SVG Icon -->
-              </button>
-            </div>
-            <p class="design-title">Premium Cream Pink Floral Polyester Fabric - 2</p>
-            <div class="meta">
-              <p class="price">₹ 299.00 <span class="unit">Per Meter</span></p>
-              <span class="tag">Best Seller</span>
-            </div>
-          </article>
-        </div>
-         <div class="col-md-4 col-sm-6">
-          <article class="product-card">
-            <div class="thumb">
-              <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Premium Cream Pink Floral Polyester Fabric - 2" />
-              <span class="badge">Sale</span>
-              <button class="quick-btn" aria-label="Add to Cart">
-                <!-- Your SVG Icon -->
-              </button>
-            </div>
-            <p class="design-title">Premium Cream Pink Floral Polyester Fabric - 2</p>
-            <div class="meta">
-              <p class="price">₹ 299.00 <span class="unit">Per Meter</span></p>
-              <span class="tag">Best Seller</span>
-            </div>
-          </article>
-        </div>
-         <div class="col-md-4 col-sm-6">
-          <article class="product-card">
-            <div class="thumb">
-              <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Premium Cream Pink Floral Polyester Fabric - 2" />
-              <span class="badge">Sale</span>
-              <button class="quick-btn" aria-label="Add to Cart">
-                <!-- Your SVG Icon -->
-              </button>
-            </div>
-            <p class="design-title">Premium Cream Pink Floral Polyester Fabric - 2</p>
-            <div class="meta">
-              <p class="price">₹ 299.00 <span class="unit">Per Meter</span></p>
-              <span class="tag">Best Seller</span>
-            </div>
-          </article>
-        </div>
-         <div class="col-md-4 col-sm-6">
-          <article class="product-card">
-            <div class="thumb">
-              <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Premium Cream Pink Floral Polyester Fabric - 2" />
-              <span class="badge">Sale</span>
-              <button class="quick-btn" aria-label="Add to Cart">
-                <!-- Your SVG Icon -->
-              </button>
-            </div>
-            <p class="design-title">Premium Cream Pink Floral Polyester Fabric - 2</p>
-            <div class="meta">
-              <p class="price">₹ 299.00 <span class="unit">Per Meter</span></p>
-              <span class="tag">Best Seller</span>
-            </div>
-          </article>
-        </div>
-         <div class="col-md-4 col-sm-6">
-          <article class="product-card">
-            <div class="thumb">
-              <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Premium Cream Pink Floral Polyester Fabric - 2" />
-              <span class="badge">Sale</span>
-              <button class="quick-btn" aria-label="Add to Cart">
-                <!-- Your SVG Icon -->
-              </button>
-            </div>
-            <p class="design-title">Premium Cream Pink Floral Polyester Fabric - 2</p>
-            <div class="meta">
-              <p class="price">₹ 299.00 <span class="unit">Per Meter</span></p>
-              <span class="tag">Best Seller</span>
-            </div>
-          </article>
-        </div>
+                                <!-- Hidden Extra -->
+                                <div class="more-options">
+                                    <label><input type="checkbox" /> Silk</label><br />
+                                    <label><input type="checkbox" /> Nylon</label><br />
+                                </div>
 
-        <!-- Add more product cards here -->
-        
-      </div>
-    </div>
+                                <!-- Show More Button -->
+                                <button type="button" class="show-more-btn" onclick="toggleMore(this)">
+                                    <span class="text">Show more</span>
+                                    <span class="icon">
+                                        <!-- SVG Chevron Down -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M5 7l5 5 5-5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <button class="filter-header" type="button" onclick="toggleFilter(this)">
+                                Width
+                            </button>
+                            <div class="filter-body">
+                                <label><input type="checkbox" /> Bemberg</label><br />
+                                <label><input type="checkbox" /> Polyester</label><br />
+                                <label><input type="checkbox" /> Pure</label><br />
+                                <label><input type="checkbox" /> Viscose</label><br />
+
+                                <!-- Hidden Extra -->
+                                <div class="more-options">
+                                    <label><input type="checkbox" /> Silk</label><br />
+                                    <label><input type="checkbox" /> Nylon</label><br />
+                                </div>
+
+                                <!-- Show More Button -->
+                                <button type="button" class="show-more-btn" onclick="toggleMore(this)">
+                                    <span class="text">Show more</span>
+                                    <span class="icon">
+                                        <!-- SVG Chevron Down -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M5 7l5 5 5-5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <button class="filter-header" type="button" onclick="toggleFilter(this)">
+                                Price
+                            </button>
+                            <div class="filter-body">
+                                <label><input type="checkbox" /> Bemberg</label><br />
+                                <label><input type="checkbox" /> Polyester</label><br />
+                                <label><input type="checkbox" /> Pure</label><br />
+                                <label><input type="checkbox" /> Viscose</label><br />
+
+                                <!-- Hidden Extra -->
+                                <div class="more-options">
+                                    <label><input type="checkbox" /> Silk</label><br />
+                                    <label><input type="checkbox" /> Nylon</label><br />
+                                </div>
+
+                                <!-- Show More Button -->
+                                <button type="button" class="show-more-btn" onclick="toggleMore(this)">
+                                    <span class="text">Show more</span>
+                                    <span class="icon">
+                                        <!-- SVG Chevron Down -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M5 7l5 5 5-5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="filter-item">
+                            <button class="filter-header" type="button" onclick="toggleFilter(this)">
+                                Colors
+                            </button>
+                            <div class="filter-body">
+                                <label><input type="checkbox" /> Bemberg</label><br />
+                                <label><input type="checkbox" /> Polyester</label><br />
+                                <label><input type="checkbox" /> Pure</label><br />
+                                <label><input type="checkbox" /> Viscose</label><br />
+
+                                <!-- Hidden Extra -->
+                                <div class="more-options">
+                                    <label><input type="checkbox" /> Silk</label><br />
+                                    <label><input type="checkbox" /> Nylon</label><br />
+                                </div>
+
+                                <!-- Show More Button -->
+                                <button type="button" class="show-more-btn" onclick="toggleMore(this)">
+                                    <span class="text">Show more</span>
+                                    <span class="icon">
+                                        <!-- SVG Chevron Down -->
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M5 7l5 5 5-5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Repeat PATTERNS, COLORS, PRICE, WIDTH same as before -->
+                    </div>
+                </div>
+
+                <!-- Right: Products -->
+                <div class="col-md-9">
+                    <!-- Top Bar -->
+                    <div class="products-topbar d-flex justify-content-between align-items-center mb-3">
+                        <div class="items-count">37 ITEMS</div>
+                        <div class="d-flex align-items-center gap-3">
+                            <!-- Sort Dropdown -->
+                            <div class="custom-dropdown">
+                                <button class="dropdown-toggle" onclick="toggleDropdown()">SORT</button>
+                                <ul class="dropdown-menu" id="sortMenu">
+                                    <li class="active">Best selling ✓</li>
+                                    <li>Featured</li>
+                                    <li>Alphabetically, A-Z</li>
+                                    <li>Alphabetically, Z-A</li>
+                                    <li>Price, low to high</li>
+                                    <li>Price, high to low</li>
+                                    <li>Date, old to new</li>
+                                    <li>Date, new to old</li>
+                                </ul>
+                            </div>
+                            <!-- View Options -->
+                            <div class="view-options">
+                                <button class="btn btn-light btn-sm active" title="Grid View"><i class="fas fa-th"></i></button>
+                                <button class="btn btn-light btn-sm" title="List View"><i class="fas fa-bars"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid -->
+                  <div class="row g-4">
+
+  <!-- Product 1 -->
+  <div class="col-md-4 col-sm-6">
+   <article class="product-card">
+  <div class="thumb">
+    <img src="/frontend/images/categories/C-min.jpg" 
+         alt="Sample Product"
+         class="main-img"
+         data-images='[
+           "/frontend/images/categories/C-min.jpg",
+           "/frontend/images/categories/co-digital-printed-fabric.webp",
+           "/frontend/images/categories/co-self-patterned-dyed-fabric.webp",
+           "/frontend/images/categories/categoriya3.jpg"
+         ]' />
+
+    <!-- Slideshow Controls -->
+    <button class="slideshow-control slideshow-control--prev" onclick="prevImage(this)">‹</button>
+    <button class="slideshow-control slideshow-control--next" onclick="nextImage(this)">›</button>
+
+    <span class="badge">New</span>
+
+    <!-- ✅ Add to Cart Button -->
+    <button class="quick-btn" aria-label="Add to Cart">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"/>
+        <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5"/>
+      </svg>
+    </button>
   </div>
+
+  <p class="design-title">Premium Cream Pink Floral</p>
+  <div class="meta">
+    <p class="price">₹319.00 <span class="unit">Per Meter</span></p>
+    <span class="tag">Premium Quality</span>
+  </div>
+</article>
+
+  </div>
+  <div class="col-md-4 col-sm-6">
+    <article class="product-card">
+      <div class="thumb">
+        <img src="/frontend/images/categories/C-min.jpg" alt="Sample Product"
+          class="main-img"
+          data-images='[
+            "/frontend/images/categories/C-min.jpg",
+            "/frontend/images/categories/co-digital-printed-fabric.webp",
+            "/frontend/images/categories/co-self-patterned-dyed-fabric.webp",
+            "/frontend/images/categories/categoriya3.jpg"
+          ]' />
+        <button class="slideshow-control slideshow-control--prev" onclick="prevImage(this)">‹</button>
+        <button class="slideshow-control slideshow-control--next" onclick="nextImage(this)">›</button>
+        <span class="badge">New</span>
+      </div>
+      <p class="design-title">Premium Cream Pink Floral</p>
+      <div class="meta">
+        <p class="price">₹319.00 <span class="unit">Per Meter</span></p>
+        <span class="tag">Premium Quality</span>
+      </div>
+    </article>
+  </div>
+  <div class="col-md-4 col-sm-6">
+    <article class="product-card">
+      <div class="thumb">
+        <img src="/frontend/images/categories/C-min.jpg" alt="Sample Product"
+          class="main-img"
+          data-images='[
+            "/frontend/images/categories/C-min.jpg",
+            "/frontend/images/categories/co-digital-printed-fabric.webp",
+            "/frontend/images/categories/co-self-patterned-dyed-fabric.webp",
+            "/frontend/images/categories/categoriya3.jpg"
+          ]' />
+        <button class="slideshow-control slideshow-control--prev" onclick="prevImage(this)">‹</button>
+        <button class="slideshow-control slideshow-control--next" onclick="nextImage(this)">›</button>
+        <span class="badge">New</span>
+      </div>
+      <p class="design-title">Premium Cream Pink Floral</p>
+      <div class="meta">
+        <p class="price">₹319.00 <span class="unit">Per Meter</span></p>
+        <span class="tag">Premium Quality</span>
+      </div>
+    </article>
+  </div>
+  <div class="col-md-4 col-sm-6">
+    <article class="product-card">
+  <div class="thumb">
+    <img src="/frontend/images/categories/C-min.jpg" 
+         alt="Sample Product"
+         class="main-img"
+         data-images='[
+           "/frontend/images/categories/C-min.jpg",
+           "/frontend/images/categories/co-digital-printed-fabric.webp",
+           "/frontend/images/categories/co-self-patterned-dyed-fabric.webp",
+           "/frontend/images/categories/categoriya3.jpg"
+         ]' />
+
+    <!-- Slideshow Controls -->
+    <button class="slideshow-control slideshow-control--prev" onclick="prevImage(this)">‹</button>
+    <button class="slideshow-control slideshow-control--next" onclick="nextImage(this)">›</button>
+
+    <span class="badge">New</span>
+
+    <!-- ✅ Add to Cart Button -->
+    <button class="quick-btn" aria-label="Add to Cart">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round"
+              d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"/>
+        <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5"/>
+      </svg>
+    </button>
+  </div>
+
+  <p class="design-title">Premium Cream Pink Floral</p>
+  <div class="meta">
+    <p class="price">₹319.00 <span class="unit">Per Meter</span></p>
+    <span class="tag">Premium Quality</span>
+  </div>
+</article>
+
+  </div>
+
+  <!-- Product 2 -->
+  <div class="col-md-4 col-sm-6">
+    <article class="product-card">
+      <div class="thumb">
+        <img src="/frontend/images/categories/C-min.jpg" alt="Sample Product"
+          class="main-img"
+          data-images='[
+            "/frontend/images/categories/C-min.jpg",
+            "/frontend/images/categories/co-digital-printed-fabric.webp",
+            "/frontend/images/categories/co-self-patterned-dyed-fabric.webp",
+            "/frontend/images/categories/categoriya3.jpg"
+          ]' />
+        <button class="slideshow-control slideshow-control--prev" onclick="prevImage(this)">‹</button>
+        <button class="slideshow-control slideshow-control--next" onclick="nextImage(this)">›</button>
+        <span class="badge">New</span>
+      </div>
+      <p class="design-title">Premium Cream Pink Floral</p>
+      <div class="meta">
+        <p class="price">₹319.00 <span class="unit">Per Meter</span></p>
+        <span class="tag">Premium Quality</span>
+      </div>
+    </article>
+  </div>
+
+  <!-- Product 3 -->
+  <div class="col-md-4 col-sm-6">
+    <article class="product-card">
+      <div class="thumb">
+        <img src="/frontend/images/categories/C-min.jpg" alt="Sample Product"
+          class="main-img"
+          data-images='[
+            "/frontend/images/categories/C-min.jpg",
+            "/frontend/images/categories/co-digital-printed-fabric.webp",
+            "/frontend/images/categories/co-self-patterned-dyed-fabric.webp",
+            "/frontend/images/categories/categoriya3.jpg"
+          ]' />
+        <button class="slideshow-control slideshow-control--prev" onclick="prevImage(this)">‹</button>
+        <button class="slideshow-control slideshow-control--next" onclick="nextImage(this)">›</button>
+        <span class="badge">New</span>
+      </div>
+      <p class="design-title">Premium Cream Pink Floral</p>
+      <div class="meta">
+        <p class="price">₹319.00 <span class="unit">Per Meter</span></p>
+        <span class="tag">Premium Quality</span>
+      </div>
+    </article>
+  </div>
+
+  <!-- Add more products the same way -->
 </div>
 
+                </div>
+            </div>
+        </div>
 
+        <!-- ✅ Mobile Filter Drawer -->
+        <div class="mobile-filter-overlay" id="mobileFilter">
+            <div class="mobile-filter-header">
+                <h4>Filter</h4>
+                <button class="close-btn" onclick="closeFilter()">✕</button>
+            </div>
+            <div class="mobile-filter-body">
+                <div class="filter-item">
+                    <button class="filter-header" type="button" onclick="toggleFilter(this)">
+                        QUALITY
+                    </button>
+                    <div class="filter-body">
+                        <label><input type="checkbox" /> Bemberg</label><br />
+                        <label><input type="checkbox" /> Polyester</label><br />
+                        <label><input type="checkbox" /> Pure</label><br />
+                        <label><input type="checkbox" /> Viscose</label><br />
 
-<!-- CSS -->
-<style>
-.hero-banner h1 {
-  font-size: 40px;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-}
+                        <!-- Hidden Extra -->
+                        <div class="more-options">
+                            <label><input type="checkbox" /> Silk</label><br />
+                            <label><input type="checkbox" /> Nylon</label><br />
+                        </div>
 
-.product-card {
-  border: 1px solid #eee;
-  transition: all 0.3s ease;
-}
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-.product-card img {
-  border-bottom: 1px solid #eee;
-}
-.card-text {
-  font-size: 14px;
-  min-height: 40px;
-}
-</style>
+                        <!-- Show More Button -->
+                        <button type="button" class="show-more-btn" onclick="toggleMore(this)">
+                            <span class="text">Show more</span>
+                            <span class="icon">
+                                <!-- SVG Chevron Down -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 7l5 5 5-5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="filter-item">
+                    <button class="filter-header" type="button" onclick="toggleFilter(this)">
+                        Fabric
+                    </button>
+                    <div class="filter-body">
+                        <label><input type="checkbox" /> Bemberg</label><br />
+                        <label><input type="checkbox" /> Polyester</label><br />
+                        <label><input type="checkbox" /> Pure</label><br />
+                        <label><input type="checkbox" /> Viscose</label><br />
 
+                        <!-- Hidden Extra -->
+                        <div class="more-options">
+                            <label><input type="checkbox" /> Silk</label><br />
+                            <label><input type="checkbox" /> Nylon</label><br />
+                        </div>
 
+                        <!-- Show More Button -->
+                        <button type="button" class="show-more-btn" onclick="toggleMore(this)">
+                            <span class="text">Show more</span>
+                            <span class="icon">
+                                <!-- SVG Chevron Down -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 7l5 5 5-5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="filter-item">
+                    <button class="filter-header" type="button" onclick="toggleFilter(this)">
+                        Width
+                    </button>
+                    <div class="filter-body">
+                        <label><input type="checkbox" /> Bemberg</label><br />
+                        <label><input type="checkbox" /> Polyester</label><br />
+                        <label><input type="checkbox" /> Pure</label><br />
+                        <label><input type="checkbox" /> Viscose</label><br />
 
+                        <!-- Hidden Extra -->
+                        <div class="more-options">
+                            <label><input type="checkbox" /> Silk</label><br />
+                            <label><input type="checkbox" /> Nylon</label><br />
+                        </div>
 
+                        <!-- Show More Button -->
+                        <button type="button" class="show-more-btn" onclick="toggleMore(this)">
+                            <span class="text">Show more</span>
+                            <span class="icon">
+                                <!-- SVG Chevron Down -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 7l5 5 5-5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="filter-item">
+                    <button class="filter-header" type="button" onclick="toggleFilter(this)">
+                        Price
+                    </button>
+                    <div class="filter-body">
+                        <label><input type="checkbox" /> Bemberg</label><br />
+                        <label><input type="checkbox" /> Polyester</label><br />
+                        <label><input type="checkbox" /> Pure</label><br />
+                        <label><input type="checkbox" /> Viscose</label><br />
 
-        
+                        <!-- Hidden Extra -->
+                        <div class="more-options">
+                            <label><input type="checkbox" /> Silk</label><br />
+                            <label><input type="checkbox" /> Nylon</label><br />
+                        </div>
+
+                        <!-- Show More Button -->
+                        <button type="button" class="show-more-btn" onclick="toggleMore(this)">
+                            <span class="text">Show more</span>
+                            <span class="icon">
+                                <!-- SVG Chevron Down -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 7l5 5 5-5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="filter-item">
+                    <button class="filter-header" type="button" onclick="toggleFilter(this)">
+                        Colors
+                    </button>
+                    <div class="filter-body">
+                        <label><input type="checkbox" /> Bemberg</label><br />
+                        <label><input type="checkbox" /> Polyester</label><br />
+                        <label><input type="checkbox" /> Pure</label><br />
+                        <label><input type="checkbox" /> Viscose</label><br />
+
+                        <!-- Hidden Extra -->
+                        <div class="more-options">
+                            <label><input type="checkbox" /> Silk</label><br />
+                            <label><input type="checkbox" /> Nylon</label><br />
+                        </div>
+
+                        <!-- Show More Button -->
+                        <button type="button" class="show-more-btn" onclick="toggleMore(this)">
+                            <span class="text">Show more</span>
+                            <span class="icon">
+                                <!-- SVG Chevron Down -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 7l5 5 5-5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-filter-footer">
+                <button class="apply-btn" onclick="closeFilter()">See 37 Items</button>
+            </div>
+        </div>
 
         <footer class="footer section-padding">
             <div class="container">

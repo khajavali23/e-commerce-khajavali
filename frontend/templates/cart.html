@@ -156,115 +156,88 @@
             </div>
         </header>
 
-  <!-- Cart Page -->
-<div class="container py-5">
-  <div class="row">
+
+<!-- ✅ Cart Page -->
+<div class="container cart-page my-5">
+  <div class="row g-4">
     
     <!-- Left: Cart Items -->
-    <div class="col-md-8">
-      <h2 class="mb-4">Cart <span class="text-muted fs-5">(4)</span></h2>
+    <div class="col-lg-8">
+      <h4 class="cart-title mb-4">Cart <span class="count">(3)</span></h4>
 
       <!-- Cart Item -->
-      <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
-        <div class="d-flex align-items-center">
-          <img src="/frontend/images/categories/C-min.jpg" alt="Product" class="img-fluid rounded border me-3" style="width:100px; height:100px; object-fit:cover;">
-          <div>
+      <div class="cart-item">
+        <div class="row align-items-center">
+          <div class="col-3 col-md-2">
+            <img src="/frontend/images/categories/C-min.jpg" alt="Product" class="cart-img" />
+          </div>
+          <div class="col-9 col-md-6">
             <h6 class="mb-1">Light Blue Orange Floral Printed Premium Polyester Fabric</h6>
             <small class="text-muted">WELCOME</small>
-            <p class="mb-1">
-              <span class="fw-bold">₹ 287.10</span> 
-              <del class="text-muted">₹ 319.00</del>
+            <p class=" mb-0">
+              <span class="fw-bold">₹287.10</span> 
+              <del>₹319.00</del>
             </p>
           </div>
+          <div class="col-12 col-md-4 d-flex align-items-center justify-content-between mt-3 mt-md-0">
+            <div class="d-flex align-items-center gap-2">
+              <button class="qty-btn">−</button>
+              <input type="number" value="1" class="qty-input" />
+              <button class="qty-btn">+</button>
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="cart-total fw-bold">₹287.10</div>
+          </div>
         </div>
-
-        <div class="d-flex align-items-center">
-          <button class="btn btn-light border">−</button>
-          <input type="number" value="1" min="1" class="form-control text-center mx-2" style="width:70px;">
-          <button class="btn btn-light border">+</button>
-          <button class="btn btn-outline-secondary ms-3">♡</button>
-        </div>
-
-        <div class="fw-bold">₹ 287.10</div>
       </div>
 
-      <!-- Cart Item 2 -->
-      <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
-        <div class="d-flex align-items-center">
-          <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Product" class="img-fluid rounded border me-3" style="width:100px; height:100px; object-fit:cover;">
-          <div>
+      <!-- Cart Item -->
+      <div class="cart-item">
+        <div class="row align-items-center">
+          <div class="col-3 col-md-2">
+            <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Product" class="cart-img" />
+          </div>
+          <div class="col-9 col-md-6">
             <h6 class="mb-1">Yellow Green Stripes Digital Printed Fabric - Crepe</h6>
             <small class="text-muted">WELCOME</small>
-            <p class="mb-1">
-              <span class="fw-bold">₹ 261.90</span> 
-              <del class="text-muted">₹ 291.00</del>
+            <p class=" mb-0">
+              <span class="fw-bold">₹261.90</span> 
+              <del>₹291.00</del>
             </p>
           </div>
-        </div>
-
-        <div class="d-flex align-items-center">
-          <button class="btn btn-light border">−</button>
-          <input type="number" value="1" min="1" class="form-control text-center mx-2" style="width:70px;">
-          <button class="btn btn-light border">+</button>
-          <button class="btn btn-outline-secondary ms-3">♡</button>
-        </div>
-
-        <div class="fw-bold">₹ 261.90</div>
-      </div>
-
-      <!-- Cart Item 3 -->
-      <div class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3">
-        <div class="d-flex align-items-center">
-          <img src="/frontend/images/categories/C-min.jpg" alt="Product" class="img-fluid rounded border me-3" style="width:100px; height:100px; object-fit:cover;">
-          <div>
-            <h6 class="mb-1">Premium Cream Pink Floral Polyester Fabric - 145CM Width</h6>
-            <small class="text-muted">WELCOME</small>
-            <p class="mb-1">
-              <span class="fw-bold">₹ 574.20</span> 
-              <del class="text-muted">₹ 319.00</del>
-            </p>
+          <div class="col-12 col-md-4 d-flex align-items-center justify-content-between mt-3 mt-md-0">
+            <div class="d-flex align-items-center gap-2">
+              <button class="qty-btn">−</button>
+              <input type="number" value="1" class="qty-input" />
+              <button class="qty-btn">+</button>
+              <button class="wishlist-btn">♡</button>
+            </div>
+            <div class="cart-total fw-bold">₹261.90</div>
           </div>
         </div>
-
-        <div class="d-flex align-items-center">
-          <button class="btn btn-light border">−</button>
-          <input type="number" value="2" min="1" class="form-control text-center mx-2" style="width:70px;">
-          <button class="btn btn-light border">+</button>
-          <button class="btn btn-outline-secondary ms-3">♡</button>
-        </div>
-
-        <div class="fw-bold">₹ 574.20</div>
       </div>
 
     </div>
 
     <!-- Right: Cart Summary -->
-    <div class="col-md-4">
-      <div class="p-4 bg-light rounded">
-        <div class="mb-3">
-          <label class="form-label">Special instructions</label>
-          <textarea class="form-control" rows="2"></textarea>
-        </div>
+    <div class="col-lg-4">
+      <div class="cart-summary p-4">
+        <h6 class="mb-3">Special instructions</h6>
+        <textarea class="form-control mb-3" rows="2" placeholder="Add a note for seller"></textarea>
+
         <div class="d-flex justify-content-between mb-2">
           <span>Estimated total</span>
-          <span class="fw-bold fs-5">₹ 1,123.20</span>
+          <span class="fw-bold fs-5">₹1,697.40</span>
         </div>
-        <p class="text-muted small">Taxes included. Discounts and shipping calculated at checkout.</p>
-        <button class="btn btn-dark w-100 fw-bold py-2">Check Offers</button>
+
+        <p class="small text-muted">Taxes included. Discounts and shipping calculated at checkout.</p>
+        <button class="checkout-btn w-100">Check Offers</button>
       </div>
     </div>
-
   </div>
 </div>
 
-<!-- CSS -->
-<style>
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-</style>
+
 
 
 
@@ -282,16 +255,14 @@ input[type=number]::-webkit-outer-spin-button {
                             <img src="/frontend/images/categories/C-min.jpg" alt="Premium Cream Pink Floral Polyester Fabric - 1" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
-                                    <path
-                                        stroke="#0c0101ff"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.2"
-                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
-                                </svg>
+                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
+                            />
+                            <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
+                        </svg>
                             </button>
                         </div>
                         <p class="design-title">Premium Cream Pink Floral Polyester Fabric - 1</p>
@@ -307,16 +278,14 @@ input[type=number]::-webkit-outer-spin-button {
                             <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Light Blue Orange Floral Printed Premium Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
-                                    <path
-                                        stroke="#0c0101ff"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.2"
-                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
-                                </svg>
+                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
+                            />
+                            <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
+                        </svg>
                             </button>
                         </div>
                         <p class="design-title">Light Blue Orange Floral Printed Premium Polyester Fabric</p>
@@ -332,16 +301,14 @@ input[type=number]::-webkit-outer-spin-button {
                             <img src="/frontend/images/categories/co-self-patterned-dyed-fabric.webp" alt="Beige Multi Floral Ditsy Printed Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
-                                    <path
-                                        stroke="#0c0101ff"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.2"
-                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
-                                </svg>
+                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
+                            />
+                            <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
+                        </svg>
                             </button>
                         </div>
                         <p class="design-title">Beige Multi Floral Ditsy Printed Polyester Fabric</p>
@@ -357,16 +324,14 @@ input[type=number]::-webkit-outer-spin-button {
                             <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
-                                    <path
-                                        stroke="#0c0101ff"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.2"
-                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
-                                </svg>
+                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
+                            />
+                            <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
+                        </svg>
                             </button>
                         </div>
                         <p class="design-title">Beige Floral Printed Kota Doria Polyester Fabric</p>

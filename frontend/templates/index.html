@@ -115,7 +115,7 @@
                             <h6 class="mb-3">Account</h6>
 
                             <!-- Sign in Button -->
-                            <a href="login.html" class="btn btn-dark w-100 mb-3">Sign in</a>
+                            <a href="login.html" class="btn btn-dark w-100 mb-3 sign_index">Sign in</a>
 
                             <!-- Links -->
                             <div class="d-flex gap-2">
@@ -174,15 +174,14 @@
                     </ul>
 
                     <!-- SUBMENU 2 -->
-                      <ul class="menu-level" id="submenu-polyester">
-  <li class="submenu-title">Polyester Fabric</li>
-  <li><a href="#">All</a></li>
-  <li><a href="#">Japan Satin</a></li>
-  <li><a href="#">Tusser Silk</a></li>
-  <li><a href="#">Kora Silk</a></li>
-  <li><a href="#">Organza</a></li>
-</ul>
-
+                    <ul class="menu-level" id="submenu-polyester">
+                        <li class="submenu-title">Polyester Fabric</li>
+                        <li><a href="#">All</a></li>
+                        <li><a href="#">Japan Satin</a></li>
+                        <li><a href="#">Tusser Silk</a></li>
+                        <li><a href="#">Kora Silk</a></li>
+                        <li><a href="#">Organza</a></li>
+                    </ul>
                 </div>
             </div>
         </header>
@@ -266,283 +265,156 @@
                     <!-- Product 1 -->
                     <article class="product-card">
                         <div class="thumb">
-                            <img src="/frontend/images/categories/C-min.jpg" alt="Premium Cream Pink Floral Polyester Fabric - 1" />
+                            <img
+                                src="/frontend/images/categories/C-min.jpg"
+                                alt="Sample Product"
+                                class="main-img"
+                                data-images='[
+           "/frontend/images/categories/C-min.jpg",
+           "/frontend/images/categories/co-digital-printed-fabric.webp",
+           "/frontend/images/categories/co-self-patterned-dyed-fabric.webp",
+           "/frontend/images/categories/categoriya3.jpg"
+         ]'
+                            />
+
+                            <!-- Slideshow Controls -->
+                            <button class="slideshow-control slideshow-control--prev" onclick="prevImage(this)">‹</button>
+                            <button class="slideshow-control slideshow-control--next" onclick="nextImage(this)">›</button>
+
                             <span class="badge">New</span>
+
+                            <!-- ✅ Add to Cart Button -->
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
-                        <p class="design-title">Premium Cream Pink Floral Polyester Fabric - 1</p>
+
+                        <p class="design-title">Premium Cream Pink Floral</p>
                         <div class="meta">
-                            <p class="price">₹ 319.00 <span class="unit">Per Meter</span></p>
-                            <span class="tag">Premium Quality</span>
-                        </div>
-                    </article>
-                      <article class="product-card">
-                        <div class="thumb">
-                            <img src="/frontend/images/categories/C-min.jpg" alt="Premium Cream Pink Floral Polyester Fabric - 1" />
-                            <span class="badge">New</span>
-                            <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
-                                    <path
-                                        stroke="#0c0101ff"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.2"
-                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <p class="design-title">Premium Cream Pink Floral Polyester Fabric - 1</p>
-                        <div class="meta">
-                            <p class="price">₹ 319.00 <span class="unit">Per Meter</span></p>
-                            <span class="tag">Premium Quality</span>
-                        </div>
-                    </article>
-                      <article class="product-card">
-                        <div class="thumb">
-                            <img src="/frontend/images/categories/C-min.jpg" alt="Premium Cream Pink Floral Polyester Fabric - 1" />
-                            <span class="badge">New</span>
-                            <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
-                                    <path
-                                        stroke="#0c0101ff"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.2"
-                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <p class="design-title">Premium Cream Pink Floral Polyester Fabric - 1</p>
-                        <div class="meta">
-                            <p class="price">₹ 319.00 <span class="unit">Per Meter</span></p>
-                            <span class="tag">Premium Quality</span>
-                        </div>
-                    </article>
-                      <article class="product-card">
-                        <div class="thumb">
-                            <img src="/frontend/images/categories/C-min.jpg" alt="Premium Cream Pink Floral Polyester Fabric - 1" />
-                            <span class="badge">New</span>
-                            <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
-                                    <path
-                                        stroke="#0c0101ff"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.2"
-                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <p class="design-title">Premium Cream Pink Floral Polyester Fabric - 1</p>
-                        <div class="meta">
-                            <p class="price">₹ 319.00 <span class="unit">Per Meter</span></p>
+                            <p class="price">₹319.00 <span class="unit">Per Meter</span></p>
                             <span class="tag">Premium Quality</span>
                         </div>
                     </article>
 
-                    <!-- Product 2 -->
                     <article class="product-card">
                         <div class="thumb">
-                            <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Light Blue Orange Floral Printed Premium Polyester Fabric" />
+                            <img
+                                src="/frontend/images/categories/C-min.jpg"
+                                alt="Sample Product"
+                                class="main-img"
+                                data-images='[
+                            "/frontend/images/categories/C-min.jpg",
+                            "/frontend/images/categories/co-digital-printed-fabric.webp",
+                            "/frontend/images/categories/co-self-patterned-dyed-fabric.webp",
+                            "/frontend/images/categories/categoriya3.jpg"
+                        ]'
+                            />
+                            <button class="slideshow-control slideshow-control--prev" onclick="prevImage(this)">‹</button>
+                            <button class="slideshow-control slideshow-control--next" onclick="nextImage(this)">›</button>
                             <span class="badge">New</span>
-                            <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
-                                    <path
-                                        stroke="#0c0101ff"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.2"
-                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
-                                </svg>
-                            </button>
                         </div>
-                        <p class="design-title">Light Blue Orange Floral Printed Premium Polyester Fabric</p>
+                        <p class="design-title">Premium Cream Pink Floral Premium Cream Pink Floral Polyester Fabric -</p>
                         <div class="meta">
-                            <p class="price">₹ 349.00 <span class="unit">Per Meter</span></p>
-                            <span class="tag">Premium Quality</span>
-                        </div>
-                    </article>
-
-                    <!-- Product 3 -->
-                    <article class="product-card">
-                        <div class="thumb">
-                            <img src="/frontend/images/categories/co-self-patterned-dyed-fabric.webp" alt="Beige Multi Floral Ditsy Printed Polyester Fabric" />
-                            <span class="badge">New</span>
-                            <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
-                                    <path
-                                        stroke="#0c0101ff"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.2"
-                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <p class="design-title">Beige Multi Floral Ditsy Printed Polyester Fabric</p>
-                        <div class="meta">
-                            <p class="price">₹ 299.00 <span class="unit">Per Meter</span></p>
-                            <span class="tag">Premium Quality</span>
-                        </div>
-                    </article>
-
-                    <!-- Product 4 -->
-                    <article class="product-card">
-                        <div class="thumb">
-                            <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
-                            <span class="badge">New</span>
-                            <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
-                                    <path
-                                        stroke="#0c0101ff"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.2"
-                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <p class="design-title">Beige Floral Printed Kota Doria Polyester Fabric</p>
-                        <div class="meta">
-                            <p class="price">₹ 329.00 <span class="unit">Per Meter</span></p>
+                            <p class="price">₹319.00 <span class="unit">Per Meter</span></p>
                             <span class="tag">Premium Quality</span>
                         </div>
                     </article>
                     <article class="product-card">
                         <div class="thumb">
-                            <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
+                            <img
+                                src="/frontend/images/categories/C-min.jpg"
+                                alt="Sample Product"
+                                class="main-img"
+                                data-images='[
+                            "/frontend/images/categories/C-min.jpg",
+                            "/frontend/images/categories/co-digital-printed-fabric.webp",
+                            "/frontend/images/categories/co-self-patterned-dyed-fabric.webp",
+                            "/frontend/images/categories/categoriya3.jpg"
+                        ]'
+                            />
+                            <button class="slideshow-control slideshow-control--prev" onclick="prevImage(this)">‹</button>
+                            <button class="slideshow-control slideshow-control--next" onclick="nextImage(this)">›</button>
                             <span class="badge">New</span>
-                            <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
-                                    <path
-                                        stroke="#0c0101ff"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.2"
-                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
-                                </svg>
-                            </button>
                         </div>
-                        <p class="design-title">Beige Floral Printed Kota Doria Polyester Fabric</p>
+                        <p class="design-title">Premium Cream Pink Floral Premium Cream Pink Floral Polyester Fabric -</p>
                         <div class="meta">
-                            <p class="price">₹ 329.00 <span class="unit">Per Meter</span></p>
+                            <p class="price">₹319.00 <span class="unit">Per Meter</span></p>
                             <span class="tag">Premium Quality</span>
                         </div>
                     </article>
                     <article class="product-card">
                         <div class="thumb">
-                            <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
+                            <img
+                                src="/frontend/images/categories/C-min.jpg"
+                                alt="Sample Product"
+                                class="main-img"
+                                data-images='[
+                            "/frontend/images/categories/C-min.jpg",
+                            "/frontend/images/categories/co-digital-printed-fabric.webp",
+                            "/frontend/images/categories/co-self-patterned-dyed-fabric.webp",
+                            "/frontend/images/categories/categoriya3.jpg"
+                        ]'
+                            />
+                            <button class="slideshow-control slideshow-control--prev" onclick="prevImage(this)">‹</button>
+                            <button class="slideshow-control slideshow-control--next" onclick="nextImage(this)">›</button>
                             <span class="badge">New</span>
-                            <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
-                                    <path
-                                        stroke="#0c0101ff"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.2"
-                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
-                                </svg>
-                            </button>
                         </div>
-                        <p class="design-title">Beige Floral Printed Kota Doria Polyester Fabric</p>
+                        <p class="design-title">Premium Cream Pink Floral Premium Cream Pink Floral Polyester Fabric -</p>
                         <div class="meta">
-                            <p class="price">₹ 329.00 <span class="unit">Per Meter</span></p>
+                            <p class="price">₹319.00 <span class="unit">Per Meter</span></p>
                             <span class="tag">Premium Quality</span>
                         </div>
                     </article>
                     <article class="product-card">
                         <div class="thumb">
-                            <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
+                            <img
+                                src="/frontend/images/categories/C-min.jpg"
+                                alt="Sample Product"
+                                class="main-img"
+                                data-images='[
+                            "/frontend/images/categories/C-min.jpg",
+                            "/frontend/images/categories/co-digital-printed-fabric.webp",
+                            "/frontend/images/categories/co-self-patterned-dyed-fabric.webp",
+                            "/frontend/images/categories/categoriya3.jpg"
+                        ]'
+                            />
+                            <button class="slideshow-control slideshow-control--prev" onclick="prevImage(this)">‹</button>
+                            <button class="slideshow-control slideshow-control--next" onclick="nextImage(this)">›</button>
                             <span class="badge">New</span>
-                            <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
-                                    <path
-                                        stroke="#0c0101ff"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.2"
-                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
-                                </svg>
-                            </button>
                         </div>
-                        <p class="design-title">Beige Floral Printed Kota Doria Polyester Fabric</p>
+                        <p class="design-title">Premium Cream Pink Floral Premium Cream Pink Floral Polyester Fabric -</p>
                         <div class="meta">
-                            <p class="price">₹ 329.00 <span class="unit">Per Meter</span></p>
+                            <p class="price">₹319.00 <span class="unit">Per Meter</span></p>
                             <span class="tag">Premium Quality</span>
                         </div>
                     </article>
                     <article class="product-card">
                         <div class="thumb">
-                            <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
+                            <img
+                                src="/frontend/images/categories/C-min.jpg"
+                                alt="Sample Product"
+                                class="main-img"
+                                data-images='[
+                            "/frontend/images/categories/C-min.jpg",
+                            "/frontend/images/categories/co-digital-printed-fabric.webp",
+                            "/frontend/images/categories/co-self-patterned-dyed-fabric.webp",
+                            "/frontend/images/categories/categoriya3.jpg"
+                        ]'
+                            />
+                            <button class="slideshow-control slideshow-control--prev" onclick="prevImage(this)">‹</button>
+                            <button class="slideshow-control slideshow-control--next" onclick="nextImage(this)">›</button>
                             <span class="badge">New</span>
-                            <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
-                                    <path
-                                        stroke="#0c0101ff"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.2"
-                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
-                                </svg>
-                            </button>
                         </div>
-                        <p class="design-title">Beige Floral Printed Kota Doria Polyester Fabric</p>
+                        <p class="design-title">Premium Cream Pink Floral Premium Cream Pink Floral Polyester Fabric -</p>
                         <div class="meta">
-                            <p class="price">₹ 329.00 <span class="unit">Per Meter</span></p>
-                            <span class="tag">Premium Quality</span>
-                        </div>
-                    </article>
-                    <article class="product-card">
-                        <div class="thumb">
-                            <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
-                            <span class="badge">New</span>
-                            <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
-                                    <path
-                                        stroke="#0c0101ff"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        stroke-width="1.2"
-                                        d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <p class="design-title">Beige Floral Printed Kota Doria Polyester Fabric</p>
-                        <div class="meta">
-                            <p class="price">₹ 329.00 <span class="unit">Per Meter</span></p>
+                            <p class="price">₹319.00 <span class="unit">Per Meter</span></p>
                             <span class="tag">Premium Quality</span>
                         </div>
                     </article>
@@ -582,24 +454,40 @@
                     <!-- Product 1 -->
                     <article class="product-card">
                         <div class="thumb">
-                            <img src="/frontend/images/categories/C-min.jpg" alt="Premium Cream Pink Floral Polyester Fabric - 1" />
+                            <img
+                                src="/frontend/images/categories/C-min.jpg"
+                                alt="Sample Product"
+                                class="main-img"
+                                data-images='[
+           "/frontend/images/categories/C-min.jpg",
+           "/frontend/images/categories/co-digital-printed-fabric.webp",
+           "/frontend/images/categories/co-self-patterned-dyed-fabric.webp",
+           "/frontend/images/categories/categoriya3.jpg"
+         ]'
+                            />
+
+                            <!-- Slideshow Controls -->
+                            <button class="slideshow-control slideshow-control--prev" onclick="prevImage(this)">‹</button>
+                            <button class="slideshow-control slideshow-control--next" onclick="nextImage(this)">›</button>
+
                             <span class="badge">New</span>
+
+                            <!-- ✅ Add to Cart Button -->
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
-                        <p class="design-title">Premium Cream Pink Floral Polyester Fabric - 1</p>
+
+                        <p class="design-title">Premium Cream Pink Floral</p>
                         <div class="meta">
-                            <p class="price">₹ 319.00 <span class="unit">Per Meter</span></p>
+                            <p class="price">₹319.00 <span class="unit">Per Meter</span></p>
                             <span class="tag">Premium Quality</span>
                         </div>
                     </article>
@@ -610,15 +498,13 @@
                             <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Light Blue Orange Floral Printed Premium Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -635,15 +521,13 @@
                             <img src="/frontend/images/categories/co-self-patterned-dyed-fabric.webp" alt="Beige Multi Floral Ditsy Printed Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -660,15 +544,13 @@
                             <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -718,15 +600,13 @@
                             <img src="/frontend/images/categories/C-min.jpg" alt="Premium Cream Pink Floral Polyester Fabric - 1" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -743,15 +623,13 @@
                             <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Light Blue Orange Floral Printed Premium Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -768,15 +646,13 @@
                             <img src="/frontend/images/categories/co-self-patterned-dyed-fabric.webp" alt="Beige Multi Floral Ditsy Printed Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -793,15 +669,13 @@
                             <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -847,15 +721,13 @@
                             <img src="/frontend/images/categories/C-min.jpg" alt="Premium Cream Pink Floral Polyester Fabric - 1" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -872,15 +744,13 @@
                             <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Light Blue Orange Floral Printed Premium Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -897,15 +767,13 @@
                             <img src="/frontend/images/categories/co-self-patterned-dyed-fabric.webp" alt="Beige Multi Floral Ditsy Printed Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -922,15 +790,13 @@
                             <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -982,15 +848,13 @@
                             <img src="/frontend/images/categories/C-min.jpg" alt="Premium Cream Pink Floral Polyester Fabric - 1" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1007,15 +871,13 @@
                             <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Light Blue Orange Floral Printed Premium Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1032,15 +894,13 @@
                             <img src="/frontend/images/categories/co-self-patterned-dyed-fabric.webp" alt="Beige Multi Floral Ditsy Printed Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1057,15 +917,13 @@
                             <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1362,15 +1220,13 @@
                             <img src="/frontend/images/categories/C-min.jpg" alt="Premium Cream Pink Floral Polyester Fabric - 1" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1387,15 +1243,13 @@
                             <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Light Blue Orange Floral Printed Premium Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1412,15 +1266,13 @@
                             <img src="/frontend/images/categories/co-self-patterned-dyed-fabric.webp" alt="Beige Multi Floral Ditsy Printed Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1437,15 +1289,13 @@
                             <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1506,15 +1356,13 @@
                             <img src="/frontend/images/categories/C-min.jpg" alt="Premium Cream Pink Floral Polyester Fabric - 1" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1531,15 +1379,13 @@
                             <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Light Blue Orange Floral Printed Premium Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1556,15 +1402,13 @@
                             <img src="/frontend/images/categories/co-self-patterned-dyed-fabric.webp" alt="Beige Multi Floral Ditsy Printed Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1581,15 +1425,13 @@
                             <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1635,15 +1477,13 @@
                             <img src="/frontend/images/categories/C-min.jpg" alt="Premium Cream Pink Floral Polyester Fabric - 1" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1660,15 +1500,13 @@
                             <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Light Blue Orange Floral Printed Premium Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1685,15 +1523,13 @@
                             <img src="/frontend/images/categories/co-self-patterned-dyed-fabric.webp" alt="Beige Multi Floral Ditsy Printed Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1710,15 +1546,13 @@
                             <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1765,15 +1599,13 @@
                             <img src="/frontend/images/categories/C-min.jpg" alt="Premium Cream Pink Floral Polyester Fabric - 1" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1790,15 +1622,13 @@
                             <img src="/frontend/images/categories/co-digital-printed-fabric.webp" alt="Light Blue Orange Floral Printed Premium Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1815,15 +1645,13 @@
                             <img src="/frontend/images/categories/co-self-patterned-dyed-fabric.webp" alt="Beige Multi Floral Ditsy Printed Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>
@@ -1840,15 +1668,13 @@
                             <img src="/frontend/images/categories/categoriya3.jpg" alt="Beige Floral Printed Kota Doria Polyester Fabric" />
                             <span class="badge">New</span>
                             <button class="quick-btn" aria-label="Add to Cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none" class="icon-pluscart" stroke="#0a0101ff">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20" stroke="currentColor" stroke-width="2">
                                     <path
-                                        stroke="#0c0101ff"
                                         stroke-linecap="round"
                                         stroke-linejoin="round"
-                                        stroke-width="1.2"
                                         d="M16.608 9.421V6.906H3.392v8.016c0 .567.224 1.112.624 1.513.4.402.941.627 1.506.627H8.63M8.818 3h2.333c.618 0 1.212.247 1.649.686a2.35 2.35 0 0 1 .683 1.658v1.562H6.486V5.344c0-.622.246-1.218.683-1.658A2.33 2.33 0 0 1 8.82 3"
-                                    ></path>
-                                    <path stroke="#0c0101ff" stroke-linecap="round" stroke-width="1.2" d="M14.608 12.563v5m2.5-2.5h-5"></path>
+                                    />
+                                    <path stroke-linecap="round" d="M14.608 12.563v5m2.5-2.5h-5" />
                                 </svg>
                             </button>
                         </div>

@@ -186,29 +186,10 @@
                     </div>
                 </div>
 
-                <style>
-                    .thumb-scroll {
-                        display: flex;
-                        flex-wrap: nowrap; /* ✅ keep in single row */
-                        gap: 10px;
-                        overflow-x: auto; /* ✅ enable horizontal scroll */
-                        -webkit-overflow-scrolling: touch; /* ✅ smooth scroll on iOS */
-                    }
-
-                    .thumb-scroll::-webkit-scrollbar {
-                        display: none; /* ✅ hide scrollbar */
-                    }
-
-                    .thumb-img {
-                        flex: 0 0 auto; /* ✅ don’t shrink */
-                        width: 120px;
-                        border-radius: 6px;
-                        border: 1px solid #ddd;
-                    }
-                </style>
+           
 
                 <!-- Right: Product Details -->
-                <div class="col-md-6">
+                <div class="col-md-6 product__details_ritght">
                     <span class="product__detials_prime bg-light text-primary mb-6 meter_style">Premium Quality</span>
                     <h2 class="product-title">Light Blue Orange Floral Printed Premium Polyester Fabric</h2>
                     <p class="text-muted code__styling">DPQ-0-AA771-145</p>
@@ -456,12 +437,12 @@
                         </div>
 
                         <!-- Feature Cards (1 Row, 4 Cards) -->
-                        <div class="info-cards d-flex justify-content-between mt-4">
+                        <div class="info-cards d-flex justify-content-between mt-4 ">
                             <img src="/frontend/images/products/Untitled_design_1.webp" alt="" srcset="" />
                         </div>
 
                         <!-- Trust Badges Row -->
-                        <div class="trust-box d-flex align-items-center justify-content-between">
+                        <div class="trust-box d-flex align-items-center justify-content-between product__details_ritght">
                             <!-- Razorpay Trusted -->
                             <div class="trust-item">
                                 <i class="fa-solid fa-shield text-success fa-2x me-2"></i>
